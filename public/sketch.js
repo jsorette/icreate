@@ -3,6 +3,7 @@ gardens = [];
 
 leafs = [];
 root = undefined;
+NB_LABELS = 5;
 
 setup = () => {
     createCanvas(windowWidth, windowHeight);
@@ -13,13 +14,31 @@ setup = () => {
 
 draw = () => {
     clear();
-    if (root && root.childs.length > 0)
+
+    if (root && root.childs.length > 0) {
+        gardens = gardens.sort((a, b) => a.longitude < b.longitude ? -1: 1);
+        leafs = leafs.sort((a, b) => a.fin.x < b.fin.x ? -1 : 1);
+        for (var i = 0; i < leafs.length; i++)
+            leafs[i].garden = gardens[i];
+        
+        noFill();
         leafs.forEach(leaf => {
             beginShape();
-            noFill();
             leaf.draw();
             endShape();
         })
+        
+        fill(0);
+        for (var i = 0; i < NB_LABELS; i++) {
+            var index = Math.round(leafs.length / NB_LABELS * i)
+            var leaf = leafs[index];
+            ellipse(leaf.fin.x, leaf.fin.y, 5, 5);
+            
+            textAlign(CENTER);
+            text(leaf.garden.Nom + "\n" + leaf.garden.Ville, leaf.fin.x, leaf.fin.y);
+
+        }
+    }
 }
 
 class Branch {
@@ -61,6 +80,7 @@ class Branch {
             curveVertex(this.fin.x, this.fin.y);
             curveVertex(this.fin.x, this.fin.y);
         }
+        this.marked = true;
     }
 }
 
@@ -77,7 +97,7 @@ onColorsChanged = () => {
         || (garden[".Médic"] && colors.includes('green'))
         || (garden[".Spon"] && colors.includes('blue'))
         || (garden[".Exotic"] && colors.includes('red'))
-    )
+    );
     
     root = new Branch(
         new Coord(width / 2, height),

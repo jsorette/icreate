@@ -1,4 +1,5 @@
-date = new Date();
+MIN_CONSECUTIVE_COLORS = 5;
+consecutiveColors = 0;
 
 registerColor = (name, hslCondition) => {
     window.tracking.ColorTracker.registerColor(name, function (r, g, b) {
@@ -35,9 +36,14 @@ onTrack = (event) => {
     });
 
     const trackedColors = new Set(event.data.map(rect => rect.color));
-    if (trackedColors.size === colors.length && [...colors].every(color => trackedColors.has(color)))
-        return;
-    colors = Array.from(trackedColors);
+    if (trackedColors.size === colors.length && [...colors].every(color => trackedColors.has(color))) {
+        consecutiveColors++;
+    }
+    else {
+        consecutiveColors = 0;
+        colors = Array.from(trackedColors);
+    }
 
-    onColorsChanged();
+    if (consecutiveColors == MIN_CONSECUTIVE_COLORS)
+        onColorsChanged();
 }
