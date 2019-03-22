@@ -1,33 +1,25 @@
 colors = [];
 gardens = [];
 
-var leafs = [];
-var bg = 0;
-var fg = 255;
-var root;
+leafs = [];
+root = undefined;
 
 setup = () => {
     createCanvas(windowWidth, windowHeight);
     smooth();
-    background(fg);
-    stroke(bg);
-    root = new Branch(
-        new Coord(width / 2, height),
-        null,
-        -HALF_PI,
-        100
-    )
-    var parents = [root];
-    parents.map(parent => parent.split())
-    while (leafs.length < 194) {
-        parents = leafs;
-        leafs = [];
-        parents.map(parent => parent.split())
-    }
+    noLoop();
+    stroke(0);
 }
 
 draw = () => {
-    root.draw();
+    clear();
+    if (root && root.childs.length > 0)
+        leafs.forEach(leaf => {
+            beginShape();
+            noFill();
+            leaf.draw();
+            endShape();
+        })
 }
 
 class Branch {
@@ -38,15 +30,18 @@ class Branch {
         this.childs = [];
         this.rotation = rotation;
         this.length = length;
+        this.marked = false;
     }
 
     split = () => {
         for (var i = 0; i < 2; i++) {
+            if (leafs.length >= gardens.length)
+                break;
             var child = new Branch(
                 this.fin,
                 this,
                 this.rotation + random(-1, 1),
-                this.length * 1
+                this.length * 1.2
             )
             this.childs.push(child);
             leafs.push(child);
@@ -54,8 +49,18 @@ class Branch {
     }
 
     draw = () => {
-        line(this.debut.x, this.debut.y, this.fin.x, this.fin.y);
-        this.childs.forEach(child => child.draw());
+        if (!this.parent || this.parent.marked) {
+            curveVertex(this.debut.x, this.debut.y);
+            curveVertex(this.debut.x, this.debut.y);
+        }
+        else {
+            this.parent.draw();
+            curveVertex(this.debut.x, this.debut.y);
+        }
+        if (this.childs.length < 1) {
+            curveVertex(this.fin.x, this.fin.y);
+            curveVertex(this.fin.x, this.fin.y);
+        }
     }
 }
 
@@ -73,4 +78,19 @@ onColorsChanged = () => {
         || (garden[".Spon"] && colors.includes('blue'))
         || (garden[".Exotic"] && colors.includes('red'))
     )
+    
+    root = new Branch(
+        new Coord(width / 2, height),
+        undefined,
+        -1.75,
+        50
+    )
+    var parents = [root];
+    leafs = parents;
+    while (leafs.length < gardens.length) {
+        parents = leafs;
+        leafs = [];
+        parents.forEach(parent => parent.split())
+    }
+    redraw();
 }

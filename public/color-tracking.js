@@ -1,3 +1,5 @@
+date = new Date();
+
 registerColor = (name, hslCondition) => {
     window.tracking.ColorTracker.registerColor(name, function (r, g, b) {
         const {h, s, l} = rgbToHsl(r, g, b);
