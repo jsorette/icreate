@@ -21,64 +21,51 @@ draw = () => {
         leafs = leafs.sort((a, b) => a.fin.x < b.fin.x ? -1 : 1);
         for (var i = 0; i < leafs.length; i++)
             leafs[i].garden = gardens[i];
-        
+
         noFill();
         leafs.forEach(leaf => {
-
+          PVector [] arrayPts;
           strokeWeight(0.5);
 
             var type = ".Spon.Médic.Exotic.Serre";
             var decalage = 0;
             if (type.includes(".Spon")){
-              beginShape();
-              noFill();
               stroke(255,21,17);
               //stroke(105,105,105);
 
-              leaf.draw(2);
+              leaf.draw(2, arrayPts);
               decalage+=3;
-              endShape();
             }
             if (type.includes(".Exotic")){
-              beginShape();
-              noFill();
               stroke(4,163,255);
-
               //stroke(155,155,155);
 
-              leaf.draw(2);
+              leaf.draw(2, arrayPts);
               decalage+=3;
-              endShape();
             }
             if (type.includes(".Serres")){
-              beginShape();
-              noFill();
               stroke(232,145,21);
               //stroke(205,205,205);
 
-              leaf.draw(2);
+              leaf.draw(2, arrayPts);
               decalage+=3;
-              endShape();
             }
             if (type.includes(".Médic")){
-              beginShape();
-              noFill();
               stroke(21,232,78);
             //  stroke(255,255,255);
 
-              leaf.draw(2);
+              leaf.draw(2, arrayPts);
               decalage+=3;
-              endShape();
             }
 
         })
-        
+
         fill(0);
         for (var i = 0; i < NB_LABELS; i++) {
             var index = Math.round(leafs.length / NB_LABELS * i)
             var leaf = leafs[index];
             ellipse(leaf.fin.x, leaf.fin.y, 5, 5);
-            
+
             textAlign(CENTER);
             text(leaf.garden.Nom + "\n" + leaf.garden.Ville, leaf.fin.x, leaf.fin.y);
 
@@ -116,23 +103,38 @@ class Branch {
         }
     }
 
-    draw = (decalage) => {
+    generatPoints = (decalage, arrayPts) => {
 
       var plusOrMinus = () => Math.random() < 0.5 ? -1 : 1;
 
         if (!this.parent || this.parent.marked) {
-            curveVertex(this.debut.x+(decalage*plusOrMinus()), this.debut.y+(decalage*plusOrMinus()));
-            curveVertex(this.debut.x+(decalage*plusOrMinus()), this.debut.y+(decalage*plusOrMinus()));
+            arrayPts.push({
+              x: this.debut.x+(decalage*plusOrMinus()),
+              y: this.debut.y+(decalage*plusOrMinus())
+            });
+            arrayPts.push({
+              x: this.debut.x+(decalage*plusOrMinus()),
+              y :this.debut.y+(decalage*plusOrMinus())
+            });
         }
         else {
-            this.parent.draw(decalage);
-            curveVertex(this.debut.x+(decalage*plusOrMinus()), this.debut.y+(decalage*plusOrMinus()));
+            this.parent.draw(decalage, arrayPts);
+            arrayPts.push({
+              x: this.debut.x+(decalage*plusOrMinus()),
+              y: this.debut.y+(decalage*plusOrMinus())
+            });
         }
         if (this.childs.length < 1) {
-
-            curveVertex(this.fin.x, this.fin.y);
-            curveVertex(this.fin.x, this.fin.y);
+            arrayPts.push({
+              x: this.fin.x,
+              y: this.fin.y
+            });
+            arrayPts.push({
+              x: this.fin.x,
+              y: this.fin.y
+            });
         }
+        return arrayPts;
     }
 }
 
@@ -150,7 +152,7 @@ onColorsChanged = () => {
         || (garden[".Spon"] && colors.includes('blue'))
         || (garden[".Exotic"] && colors.includes('red'))
     );
-    
+
     root = new Branch(
         new Coord(width / 2, height),
         undefined,
