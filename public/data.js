@@ -5,10 +5,10 @@ data = [
    "longitude": 53.35,
    "latitude": -6.26,
    "Nom": "National Botanic Gardens",
-   ".Spon": null,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 5
  },
  {
@@ -17,10 +17,10 @@ data = [
    "longitude": 47.85,
    "latitude": 2.74,
    "Nom": "Arboretum des Barres",
-   ".Spon": 2,
-   ".Exotic": 6,
-   ".Serres": 2,
-   ".Médic": 5,
+   "SPON": 2,
+   "EXOTIC": 6,
+   "SERRES": 2,
+   "MEDIC": 5,
    "Total Expédié": 15
  },
  {
@@ -29,10 +29,10 @@ data = [
    "longitude": 44.32,
    "latitude": 23.8,
    "Nom": "Gradina Botanica \" Al. Buia\"",
-   ".Spon": 4,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 4,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 10
  },
  {
@@ -41,10 +41,10 @@ data = [
    "longitude": 47.66,
    "latitude": 9.18,
    "Nom": "Universität Konstanz, facultät für Biologie",
-   ".Spon": 14,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 14,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 15
  },
  {
@@ -53,10 +53,10 @@ data = [
    "longitude": 55.75,
    "latitude": 37.62,
    "Nom": "Seed Department",
-   ".Spon": null,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": null,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 3
  },
  {
@@ -65,10 +65,10 @@ data = [
    "longitude": 45.61,
    "latitude": 7.36,
    "Nom": "Parco Nazionale Gran Paradiso",
-   ".Spon": 9,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 9,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 9
  },
  {
@@ -77,10 +77,10 @@ data = [
    "longitude": 48.31,
    "latitude": 18.09,
    "Nom": "Botanical Garden of",
-   ".Spon": null,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 2
  },
  {
@@ -89,10 +89,10 @@ data = [
    "longitude": 45.79,
    "latitude": 6.97,
    "Nom": "Giardino Botanica Alpino 'Saussurea'",
-   ".Spon": 6,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 6,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 6
  },
  {
@@ -101,10 +101,10 @@ data = [
    "longitude": 35.02,
    "latitude": 135.76,
    "Nom": "The Nippon Shinyaku \"Instit.for Botanical Research",
-   ".Spon": null,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": null,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 5
  },
  {
@@ -113,10 +113,10 @@ data = [
    "longitude": 47.66,
    "latitude": 9.18,
    "Nom": "Universität Konstanz, facultät für Biologie",
-   ".Spon": 1,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -125,10 +125,10 @@ data = [
    "longitude": 45.65,
    "latitude": 10.62,
    "Nom": "Universita'degli studi di milano",
-   ".Spon": 2,
-   ".Exotic": 12,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 2,
+   "EXOTIC": 12,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 15
  },
  {
@@ -137,10 +137,10 @@ data = [
    "longitude": 48.31,
    "latitude": 18.34,
    "Nom": "Arboretum Mlynany",
-   ".Spon": 6,
-   ".Exotic": 16,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 6,
+   "EXOTIC": 16,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 23
  },
  {
@@ -149,10 +149,10 @@ data = [
    "longitude": 59.33,
    "latitude": 18.07,
    "Nom": "Stockholm University",
-   ".Spon": 1,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 2
  },
  {
@@ -161,10 +161,10 @@ data = [
    "longitude": 51.23,
    "latitude": 6.78,
    "Nom": "Botanischer Garten",
-   ".Spon": 9,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 9,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 9
  },
  {
@@ -173,10 +173,10 @@ data = [
    "longitude": 50.45,
    "latitude": 30.52,
    "Nom": ", National Botanical Garden",
-   ".Spon": 7,
-   ".Exotic": 34,
-   ".Serres": null,
-   ".Médic": 9,
+   "SPON": 7,
+   "EXOTIC": 34,
+   "SERRES": null,
+   "MEDIC": 9,
    "Total Expédié": 50
  },
  {
@@ -185,10 +185,10 @@ data = [
    "longitude": 50.94,
    "latitude": 6.96,
    "Nom": "Botanischer Garten",
-   ".Spon": 2,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 3,
+   "SPON": 2,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 3,
    "Total Expédié": 5
  },
  {
@@ -197,10 +197,10 @@ data = [
    "longitude": 58.01,
    "latitude": 56.25,
    "Nom": "Botanical Garden of Perm",
-   ".Spon": 1,
-   ".Exotic": 31,
-   ".Serres": 3,
-   ".Médic": 12,
+   "SPON": 1,
+   "EXOTIC": 31,
+   "SERRES": 3,
+   "MEDIC": 12,
    "Total Expédié": 47
  },
  {
@@ -209,10 +209,10 @@ data = [
    "longitude": 32.65,
    "latitude": -16.91,
    "Nom": "Jardim botanico da Madeira",
-   ".Spon": null,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": null,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 1
  },
  {
@@ -221,10 +221,10 @@ data = [
    "longitude": 56.49,
    "latitude": 84.95,
    "Nom": "Tomsk State University",
-   ".Spon": 7,
-   ".Exotic": 7,
-   ".Serres": 1,
-   ".Médic": 1,
+   "SPON": 7,
+   "EXOTIC": 7,
+   "SERRES": 1,
+   "MEDIC": 1,
    "Total Expédié": 16
  },
  {
@@ -233,10 +233,10 @@ data = [
    "longitude": 51.25,
    "latitude": 22.57,
    "Nom": "Hortus Farmacognosticus",
-   ".Spon": 6,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 6,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 6
  },
  {
@@ -245,10 +245,10 @@ data = [
    "longitude": -33.42,
    "latitude": -70.73,
    "Nom": "Dendrological Park Alexandria",
-   ".Spon": null,
-   ".Exotic": 6,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 6,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 6
  },
  {
@@ -257,10 +257,10 @@ data = [
    "longitude": 63.43,
    "latitude": 10.4,
    "Nom": "Ringve Botanical Gardens",
-   ".Spon": 5,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 5,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 5
  },
  {
@@ -269,10 +269,10 @@ data = [
    "longitude": 42.88,
    "latitude": 74.61,
    "Nom": "Gareev Botanical",
-   ".Spon": 13,
-   ".Exotic": 28,
-   ".Serres": 4,
-   ".Médic": 1,
+   "SPON": 13,
+   "EXOTIC": 28,
+   "SERRES": 4,
+   "MEDIC": 1,
    "Total Expédié": 46
  },
  {
@@ -281,10 +281,10 @@ data = [
    "longitude": 62.03,
    "latitude": 129.73,
    "Nom": "The Institute for biological problems of cryolitozone SB RAS",
-   ".Spon": 15,
-   ".Exotic": 6,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 15,
+   "EXOTIC": 6,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 21
  },
  {
@@ -293,10 +293,10 @@ data = [
    "longitude": 55.75,
    "latitude": 37.62,
    "Nom": "Botanical Garden of Timiryasev academy",
-   ".Spon": 1,
-   ".Exotic": 19,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 1,
+   "EXOTIC": 19,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 21
  },
  {
@@ -305,10 +305,10 @@ data = [
    "longitude": 51.66,
    "latitude": 39.2,
    "Nom": "Hortus Botanicus nom. B.M. Kozo-Poljanskii",
-   ".Spon": 6,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 6,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 12
  },
  {
@@ -317,10 +317,10 @@ data = [
    "longitude": 50,
    "latitude": 8.28,
    "Nom": "Botanischer Garten",
-   ".Spon": null,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 2
  },
  {
@@ -329,10 +329,10 @@ data = [
    "longitude": 43.94,
    "latitude": 5.77,
    "Nom": "Salagon",
-   ".Spon": 2,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": 4,
+   "SPON": 2,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": 4,
    "Total Expédié": 9
  },
  {
@@ -341,10 +341,10 @@ data = [
    "longitude": 48.91,
    "latitude": 2.29,
    "Nom": "Boff / Bouet",
-   ".Spon": 1,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 6
  },
  {
@@ -353,10 +353,10 @@ data = [
    "longitude": 41.38,
    "latitude": 2.18,
    "Nom": "Jardi Botanic de Barcelona",
-   ".Spon": 1,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -365,10 +365,10 @@ data = [
    "longitude": 41.31,
    "latitude": 69.28,
    "Nom": "The Botanical garden F.N.Rusanovi",
-   ".Spon": 22,
-   ".Exotic": 23,
-   ".Serres": null,
-   ".Médic": 4,
+   "SPON": 22,
+   "EXOTIC": 23,
+   "SERRES": null,
+   "MEDIC": 4,
    "Total Expédié": 49
  },
  {
@@ -377,10 +377,10 @@ data = [
    "longitude": 55.75,
    "latitude": 37.62,
    "Nom": "Hortus Botanicus Instituti Plantarum",
-   ".Spon": 2,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": 6,
+   "SPON": 2,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": 6,
    "Total Expédié": 11
  },
  {
@@ -389,10 +389,10 @@ data = [
    "longitude": 52.24,
    "latitude": -0.9,
    "Nom": "Botanic Garden Smith College",
-   ".Spon": 6,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 6,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 6
  },
  {
@@ -401,10 +401,10 @@ data = [
    "longitude": 56.84,
    "latitude": 24.75,
    "Nom": "National Botanic Garden",
-   ".Spon": 6,
-   ".Exotic": 12,
-   ".Serres": 6,
-   ".Médic": 3,
+   "SPON": 6,
+   "EXOTIC": 12,
+   "SERRES": 6,
+   "MEDIC": 3,
    "Total Expédié": 27
  },
  {
@@ -413,10 +413,10 @@ data = [
    "longitude": 51.33,
    "latitude": 6.56,
    "Nom": "Botanischer Garten",
-   ".Spon": 3,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 3,
+   "SPON": 3,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 3,
    "Total Expédié": 11
  },
  {
@@ -425,10 +425,10 @@ data = [
    "longitude": 48.86,
    "latitude": 2.35,
    "Nom": "MNHN Département des jardins botaniques et zoologiques",
-   ".Spon": 21,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 21,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 24
  },
  {
@@ -437,10 +437,10 @@ data = [
    "longitude": 45.84,
    "latitude": 1.26,
    "Nom": "Jardin de l' Evêché et botanique",
-   ".Spon": 14,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": 24,
+   "SPON": 14,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": 24,
    "Total Expédié": 40
  },
  {
@@ -449,10 +449,10 @@ data = [
    "longitude": 49.93,
    "latitude": 17.9,
    "Nom": "Arboretum Novy Dvur",
-   ".Spon": null,
-   ".Exotic": 3,
-   ".Serres": 1,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 3,
+   "SERRES": 1,
+   "MEDIC": null,
    "Total Expédié": 4
  },
  {
@@ -461,10 +461,10 @@ data = [
    "longitude": 46.77,
    "latitude": 23.59,
    "Nom": "Gradina Botanica",
-   ".Spon": 4,
-   ".Exotic": 7,
-   ".Serres": 4,
-   ".Médic": 9,
+   "SPON": 4,
+   "EXOTIC": 7,
+   "SERRES": 4,
+   "MEDIC": 9,
    "Total Expédié": 24
  },
  {
@@ -473,10 +473,10 @@ data = [
    "longitude": 40.22,
    "latitude": 44.56,
    "Nom": "Institute of Botany",
-   ".Spon": 13,
-   ".Exotic": 32,
-   ".Serres": 2,
-   ".Médic": 3,
+   "SPON": 13,
+   "EXOTIC": 32,
+   "SERRES": 2,
+   "MEDIC": 3,
    "Total Expédié": 50
  },
  {
@@ -485,10 +485,10 @@ data = [
    "longitude": 59.94,
    "latitude": 30.32,
    "Nom": "Hortus Botanicus Petri Margus Inst.Botanici V.L Komarovii",
-   ".Spon": null,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -497,10 +497,10 @@ data = [
    "longitude": 53.9,
    "latitude": 27.56,
    "Nom": "Central Botanical garden of National",
-   ".Spon": 2,
-   ".Exotic": 20,
-   ".Serres": 5,
-   ".Médic": 2,
+   "SPON": 2,
+   "EXOTIC": 20,
+   "SERRES": 5,
+   "MEDIC": 2,
    "Total Expédié": 29
  },
  {
@@ -509,10 +509,10 @@ data = [
    "longitude": 51.22,
    "latitude": 4.4,
    "Nom": "Den Botaniek Hortus Botanicus Antverpiensis",
-   ".Spon": 13,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 13,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 13
  },
  {
@@ -521,10 +521,10 @@ data = [
    "longitude": 48.7,
    "latitude": 2.19,
    "Nom": "Université Paris Sud",
-   ".Spon": 3,
-   ".Exotic": 8,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 3,
+   "EXOTIC": 8,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 12
  },
  {
@@ -533,10 +533,10 @@ data = [
    "longitude": 43.22,
    "latitude": 76.92,
    "Nom": "The Main Botanical Garten",
-   ".Spon": 4,
-   ".Exotic": 19,
-   ".Serres": null,
-   ".Médic": 3,
+   "SPON": 4,
+   "EXOTIC": 19,
+   "SERRES": null,
+   "MEDIC": 3,
    "Total Expédié": 26
  },
  {
@@ -545,10 +545,10 @@ data = [
    "longitude": 48,
    "latitude": 128,
    "Nom": "Forest botanical garden of",
-   ".Spon": 12,
-   ".Exotic": 17,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 12,
+   "EXOTIC": 17,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 29
  },
  {
@@ -557,10 +557,10 @@ data = [
    "longitude": 38.63,
    "latitude": -90.2,
    "Nom": "Missouri Botanical Garden",
-   ".Spon": 8,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 8,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 11
  },
  {
@@ -569,10 +569,10 @@ data = [
    "longitude": 41.69,
    "latitude": 44.8,
    "Nom": "Georgian National Botanical Garden",
-   ".Spon": 18,
-   ".Exotic": 12,
-   ".Serres": null,
-   ".Médic": 6,
+   "SPON": 18,
+   "EXOTIC": 12,
+   "SERRES": null,
+   "MEDIC": 6,
    "Total Expédié": 36
  },
  {
@@ -581,10 +581,10 @@ data = [
    "longitude": 46.24,
    "latitude": 6.15,
    "Nom": "Conservatoire et Jardins Botaniques",
-   ".Spon": 4,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 4,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 6
  },
  {
@@ -593,10 +593,10 @@ data = [
    "longitude": 47.66,
    "latitude": 9.18,
    "Nom": "Universität Konstanz, facultät für Biologie",
-   ".Spon": 4,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 4,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 4
  },
  {
@@ -605,10 +605,10 @@ data = [
    "longitude": 51.48,
    "latitude": 7.22,
    "Nom": "Ruhr-Universität Bochum",
-   ".Spon": null,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 6,
+   "SPON": null,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 6,
    "Total Expédié": 6
  },
  {
@@ -617,10 +617,10 @@ data = [
    "longitude": 51.49,
    "latitude": -0.14,
    "Nom": "Chelsea Physic Garden",
-   ".Spon": null,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": null,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 2
  },
  {
@@ -629,10 +629,10 @@ data = [
    "longitude": 35.02,
    "latitude": 135.76,
    "Nom": "The Kyoto Botanical Garden",
-   ".Spon": 2,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 2,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 4
  },
  {
@@ -641,10 +641,10 @@ data = [
    "longitude": 50.06,
    "latitude": 19.94,
    "Nom": "Polish Academy of Sciences ,Institute Pharmacology",
-   ".Spon": 5,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 3,
+   "SPON": 5,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 3,
    "Total Expédié": 8
  },
  {
@@ -653,10 +653,10 @@ data = [
    "longitude": 51.77,
    "latitude": 19.46,
    "Nom": "Ogrod Botaniczny",
-   ".Spon": null,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 3
  },
  {
@@ -665,10 +665,10 @@ data = [
    "longitude": 51.25,
    "latitude": 22.57,
    "Nom": "Uniwersytet Marii Curie-Sklodowskiej",
-   ".Spon": 5,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 5,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 9
  },
  {
@@ -677,10 +677,10 @@ data = [
    "longitude": 43.12,
    "latitude": 131.89,
    "Nom": "Botanical Garden Institute",
-   ".Spon": null,
-   ".Exotic": 11,
-   ".Serres": 5,
-   ".Médic": 4,
+   "SPON": null,
+   "EXOTIC": 11,
+   "SERRES": 5,
+   "MEDIC": 4,
    "Total Expédié": 20
  },
  {
@@ -689,10 +689,10 @@ data = [
    "longitude": 54.9,
    "latitude": 23.9,
    "Nom": "Hortus Botanicus Kaunensis",
-   ".Spon": 5,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 5,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 8
  },
  {
@@ -701,10 +701,10 @@ data = [
    "longitude": 46.33,
    "latitude": 21.75,
    "Nom": "Gradina Botanica Universitatea",
-   ".Spon": 1,
-   ".Exotic": 14,
-   ".Serres": null,
-   ".Médic": 5,
+   "SPON": 1,
+   "EXOTIC": 14,
+   "SERRES": null,
+   "MEDIC": 5,
    "Total Expédié": 20
  },
  {
@@ -713,10 +713,10 @@ data = [
    "longitude": 50.11,
    "latitude": 8.68,
    "Nom": "Wissenschaftsgarten am campus Riedberg",
-   ".Spon": 11,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 11,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 16
  },
  {
@@ -725,10 +725,10 @@ data = [
    "longitude": 41.62,
    "latitude": 41.62,
    "Nom": "Batumi Botanical Garden",
-   ".Spon": 15,
-   ".Exotic": 8,
-   ".Serres": 0,
-   ".Médic": 6,
+   "SPON": 15,
+   "EXOTIC": 8,
+   "SERRES": 0,
+   "MEDIC": 6,
    "Total Expédié": 29
  },
  {
@@ -737,10 +737,10 @@ data = [
    "longitude": 61.79,
    "latitude": 34.39,
    "Nom": "Botanical Garden of The Petrozavodsk",
-   ".Spon": null,
-   ".Exotic": 17,
-   ".Serres": 1,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 17,
+   "SERRES": 1,
+   "MEDIC": null,
    "Total Expédié": 18
  },
  {
@@ -749,10 +749,10 @@ data = [
    "longitude": 49.84,
    "latitude": 24.03,
    "Nom": "Botanical Garden of the Ivan Franko",
-   ".Spon": 9,
-   ".Exotic": 9,
-   ".Serres": 1,
-   ".Médic": 3,
+   "SPON": 9,
+   "EXOTIC": 9,
+   "SERRES": 1,
+   "MEDIC": 3,
    "Total Expédié": 22
  },
  {
@@ -761,10 +761,10 @@ data = [
    "longitude": 48.14,
    "latitude": 17.16,
    "Nom": "Hortus Plantarum Medicarum",
-   ".Spon": 5,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 5,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 6
  },
  {
@@ -773,10 +773,10 @@ data = [
    "longitude": 47.02,
    "latitude": 28.83,
    "Nom": "Botanical Garden Institute",
-   ".Spon": 16,
-   ".Exotic": 25,
-   ".Serres": 6,
-   ".Médic": 2,
+   "SPON": 16,
+   "EXOTIC": 25,
+   "SERRES": 6,
+   "MEDIC": 2,
    "Total Expédié": 47
  },
  {
@@ -785,10 +785,10 @@ data = [
    "longitude": 53.17,
    "latitude": 6.61,
    "Nom": "Hortus Haren",
-   ".Spon": 13,
-   ".Exotic": 15,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 13,
+   "EXOTIC": 15,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 28
  },
  {
@@ -797,10 +797,10 @@ data = [
    "longitude": 55.75,
    "latitude": 37.62,
    "Nom": "Garden of rare plants of Mickail Diev",
-   ".Spon": 5,
-   ".Exotic": 3,
-   ".Serres": 1,
-   ".Médic": 1,
+   "SPON": 5,
+   "EXOTIC": 3,
+   "SERRES": 1,
+   "MEDIC": 1,
    "Total Expédié": 10
  },
  {
@@ -809,10 +809,10 @@ data = [
    "longitude": 50.06,
    "latitude": 19.94,
    "Nom": "Ogrod Botaniczny",
-   ".Spon": 7,
-   ".Exotic": 22,
-   ".Serres": null,
-   ".Médic": 8,
+   "SPON": 7,
+   "EXOTIC": 22,
+   "SERRES": null,
+   "MEDIC": 8,
    "Total Expédié": 37
  },
  {
@@ -821,10 +821,10 @@ data = [
    "longitude": 48.11,
    "latitude": -1.68,
    "Nom": "Jardin Botanique de la Ville",
-   ".Spon": 16,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 16,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 22
  },
  {
@@ -833,10 +833,10 @@ data = [
    "longitude": 55.19,
    "latitude": 30.21,
    "Nom": "Hortus botanicus Universitatis",
-   ".Spon": 6,
-   ".Exotic": 4,
-   ".Serres": 4,
-   ".Médic": null,
+   "SPON": 6,
+   "EXOTIC": 4,
+   "SERRES": 4,
+   "MEDIC": null,
    "Total Expédié": 14
  },
  {
@@ -845,10 +845,10 @@ data = [
    "longitude": 46.92,
    "latitude": 5.11,
    "Nom": "Jardin Botanique 'Nivéole et Martagon'",
-   ".Spon": 6,
-   ".Exotic": 8,
-   ".Serres": 1,
-   ".Médic": null,
+   "SPON": 6,
+   "EXOTIC": 8,
+   "SERRES": 1,
+   "MEDIC": null,
    "Total Expédié": 15
  },
  {
@@ -857,10 +857,10 @@ data = [
    "longitude": 55.7,
    "latitude": 13.19,
    "Nom": "The Botanical Garden",
-   ".Spon": 1,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -869,10 +869,10 @@ data = [
    "longitude": 52.41,
    "latitude": 16.93,
    "Nom": "Ogrod Botaniczny Uniwersytetu UMA,",
-   ".Spon": 1,
-   ".Exotic": 0,
-   ".Serres": null,
-   ".Médic": 0,
+   "SPON": 1,
+   "EXOTIC": 0,
+   "SERRES": null,
+   "MEDIC": 0,
    "Total Expédié": 1
  },
  {
@@ -881,10 +881,10 @@ data = [
    "longitude": 47.53,
    "latitude": 21.63,
    "Nom": "Hortus Botanicus Universitatis",
-   ".Spon": 1,
-   ".Exotic": 12,
-   ".Serres": 3,
-   ".Médic": 3,
+   "SPON": 1,
+   "EXOTIC": 12,
+   "SERRES": 3,
+   "MEDIC": 3,
    "Total Expédié": 19
  },
  {
@@ -893,10 +893,10 @@ data = [
    "longitude": 48.78,
    "latitude": 9.18,
    "Nom": "Hohenheim Garten (772)",
-   ".Spon": 3,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 3,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 3
  },
  {
@@ -905,10 +905,10 @@ data = [
    "longitude": 47.16,
    "latitude": 27.58,
    "Nom": "Botanic Garden Iasi",
-   ".Spon": 3,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 3,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 7
  },
  {
@@ -917,10 +917,10 @@ data = [
    "longitude": 56.84,
    "latitude": 24.75,
    "Nom": "National Botanic Garden",
-   ".Spon": 2,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 5,
+   "SPON": 2,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 5,
    "Total Expédié": 8
  },
  {
@@ -929,10 +929,10 @@ data = [
    "longitude": 53.14,
    "latitude": 8.21,
    "Nom": "University of Oldenburg Carl-von-Ossietzky",
-   ".Spon": 7,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 7,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 7
  },
  {
@@ -941,10 +941,10 @@ data = [
    "longitude": 56.84,
    "latitude": 60.61,
    "Nom": "Hortus Botanicus Univertatis Uralensis",
-   ".Spon": 16,
-   ".Exotic": 10,
-   ".Serres": null,
-   ".Médic": 9,
+   "SPON": 16,
+   "EXOTIC": 10,
+   "SERRES": null,
+   "MEDIC": 9,
    "Total Expédié": 35
  },
  {
@@ -953,10 +953,10 @@ data = [
    "longitude": 50.09,
    "latitude": 14.42,
    "Nom": "The Charles University in Prague",
-   ".Spon": 4,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 4,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 8
  },
  {
@@ -965,10 +965,10 @@ data = [
    "longitude": 46.47,
    "latitude": 10.37,
    "Nom": "Consorzio Parco Nazionale dello Stelvio",
-   ".Spon": null,
-   ".Exotic": 6,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": null,
+   "EXOTIC": 6,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 7
  },
  {
@@ -977,10 +977,10 @@ data = [
    "longitude": 49.33,
    "latitude": 21.73,
    "Nom": "Ladislav SUVAK",
-   ".Spon": 12,
-   ".Exotic": 14,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 12,
+   "EXOTIC": 14,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 28
  },
  {
@@ -989,10 +989,10 @@ data = [
    "longitude": 52.23,
    "latitude": 21.01,
    "Nom": "Botanic Garden of Warsaw University",
-   ".Spon": 13,
-   ".Exotic": 2,
-   ".Serres": 0,
-   ".Médic": null,
+   "SPON": 13,
+   "EXOTIC": 2,
+   "SERRES": 0,
+   "MEDIC": null,
    "Total Expédié": 15
  },
  {
@@ -1001,10 +1001,10 @@ data = [
    "longitude": 52.84,
    "latitude": 13.8,
    "Nom": "Hochschule fur nachhltige Entwicklung (FH)",
-   ".Spon": 3,
-   ".Exotic": 8,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 3,
+   "EXOTIC": 8,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 13
  },
  {
@@ -1013,10 +1013,10 @@ data = [
    "longitude": 48.51,
    "latitude": 3.56,
    "Nom": "Jardin Botanique",
-   ".Spon": 3,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 3,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 5
  },
  {
@@ -1025,10 +1025,10 @@ data = [
    "longitude": 56.04,
    "latitude": 12.7,
    "Nom": "Fredriksdals Friluftsmuseum",
-   ".Spon": 13,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 13,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 13
  },
  {
@@ -1037,10 +1037,10 @@ data = [
    "longitude": 43.21,
    "latitude": 27.92,
    "Nom": "University Botanic Garden",
-   ".Spon": 4,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 4,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 7
  },
  {
@@ -1049,10 +1049,10 @@ data = [
    "longitude": 50.83,
    "latitude": 12.93,
    "Nom": "Botanischer Garten Chemnitz",
-   ".Spon": 6,
-   ".Exotic": 3,
-   ".Serres": 1,
-   ".Médic": 5,
+   "SPON": 6,
+   "EXOTIC": 3,
+   "SERRES": 1,
+   "MEDIC": 5,
    "Total Expédié": 15
  },
  {
@@ -1061,10 +1061,10 @@ data = [
    "longitude": 50.29,
    "latitude": 127.53,
    "Nom": "Armur branch of Botanical Garden-Institute of FEB RAS",
-   ".Spon": 2,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 2,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 2
  },
  {
@@ -1073,10 +1073,10 @@ data = [
    "longitude": 47.77,
    "latitude": -2.15,
    "Nom": "Laboratoire de Biologie Végétale Yves Rocher,",
-   ".Spon": 1,
-   ".Exotic": null,
-   ".Serres": 1,
-   ".Médic": 9,
+   "SPON": 1,
+   "EXOTIC": null,
+   "SERRES": 1,
+   "MEDIC": 9,
    "Total Expédié": 11
  },
  {
@@ -1085,10 +1085,10 @@ data = [
    "longitude": 38.35,
    "latitude": -0.49,
    "Nom": "Instituto Universitario de Investigaticion",
-   ".Spon": 6,
-   ".Exotic": 8,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 6,
+   "EXOTIC": 8,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 14
  },
  {
@@ -1097,10 +1097,10 @@ data = [
    "longitude": 53.12,
    "latitude": 18,
    "Nom": "Botanical Garden of plant",
-   ".Spon": 2,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 2,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 8
  },
  {
@@ -1109,10 +1109,10 @@ data = [
    "longitude": 47.24,
    "latitude": 6.02,
    "Nom": "Jardin Botanique de l'Université de Franche Comté",
-   ".Spon": 3,
-   ".Exotic": 2,
-   ".Serres": 1,
-   ".Médic": 6,
+   "SPON": 3,
+   "EXOTIC": 2,
+   "SERRES": 1,
+   "MEDIC": 6,
    "Total Expédié": 12
  },
  {
@@ -1121,10 +1121,10 @@ data = [
    "longitude": 51.66,
    "latitude": 19.35,
    "Nom": "Roman Plaskota",
-   ".Spon": 17,
-   ".Exotic": 21,
-   ".Serres": null,
-   ".Médic": 11,
+   "SPON": 17,
+   "EXOTIC": 21,
+   "SERRES": null,
+   "MEDIC": 11,
    "Total Expédié": 49
  },
  {
@@ -1133,10 +1133,10 @@ data = [
    "longitude": 42.26,
    "latitude": -72.57,
    "Nom": "Botanic Garden",
-   ".Spon": 4,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 4,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 7
  },
  {
@@ -1145,10 +1145,10 @@ data = [
    "longitude": 48.21,
    "latitude": 16.37,
    "Nom": "Botanischer Garten der",
-   ".Spon": 2,
-   ".Exotic": 7,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 2,
+   "EXOTIC": 7,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 9
  },
  {
@@ -1157,10 +1157,10 @@ data = [
    "longitude": 49.79,
    "latitude": 9.93,
    "Nom": "Botanischer Garten der",
-   ".Spon": 3,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 3,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 4
  },
  {
@@ -1169,10 +1169,10 @@ data = [
    "longitude": 47.27,
    "latitude": 11.4,
    "Nom": "Botanischer Garten und Alpine Garden",
-   ".Spon": 2,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 2,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 5
  },
  {
@@ -1181,10 +1181,10 @@ data = [
    "longitude": 38.71,
    "latitude": -9.14,
    "Nom": "Banco de Sementes Parque Botanico",
-   ".Spon": 5,
-   ".Exotic": 6,
-   ".Serres": 0,
-   ".Médic": null,
+   "SPON": 5,
+   "EXOTIC": 6,
+   "SERRES": 0,
+   "MEDIC": null,
    "Total Expédié": 11
  },
  {
@@ -1193,10 +1193,10 @@ data = [
    "longitude": 46.95,
    "latitude": 7.45,
    "Nom": "Botanical Garden",
-   ".Spon": null,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 2
  },
  {
@@ -1205,10 +1205,10 @@ data = [
    "longitude": 55.93,
    "latitude": 23.32,
    "Nom": "Botanic Garden",
-   ".Spon": 1,
-   ".Exotic": 13,
-   ".Serres": 1,
-   ".Médic": 6,
+   "SPON": 1,
+   "EXOTIC": 13,
+   "SERRES": 1,
+   "MEDIC": 6,
    "Total Expédié": 21
  },
  {
@@ -1217,10 +1217,10 @@ data = [
    "longitude": 45.46,
    "latitude": -75.72,
    "Nom": "Majella Larochelle",
-   ".Spon": 1,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -1229,10 +1229,10 @@ data = [
    "longitude": 48.14,
    "latitude": 17.16,
    "Nom": "Hortus Botanicus",
-   ".Spon": 2,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": 5,
+   "SPON": 2,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": 5,
    "Total Expédié": 11
  },
  {
@@ -1241,10 +1241,10 @@ data = [
    "longitude": 52.4,
    "latitude": 13.06,
    "Nom": "Universität Potsdam",
-   ".Spon": 9,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 9,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 11
  },
  {
@@ -1253,10 +1253,10 @@ data = [
    "longitude": 48.4,
    "latitude": 2.47,
    "Nom": "Conservatoire National des Plantes Médicinales",
-   ".Spon": 1,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": 4,
+   "SPON": 1,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": 4,
    "Total Expédié": 8
  },
  {
@@ -1265,10 +1265,10 @@ data = [
    "longitude": 51.48,
    "latitude": -3.18,
    "Nom": "Applied Biologie - South Wing",
-   ".Spon": 7,
-   ".Exotic": 10,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 7,
+   "EXOTIC": 10,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 18
  },
  {
@@ -1277,10 +1277,10 @@ data = [
    "longitude": 67.61,
    "latitude": 33.68,
    "Nom": "Polar Alpine Botanical Garden & Institute",
-   ".Spon": 9,
-   ".Exotic": 9,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 9,
+   "EXOTIC": 9,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 19
  },
  {
@@ -1289,10 +1289,10 @@ data = [
    "longitude": 47.6,
    "latitude": -122.33,
    "Nom": "Medicinal Herb Garden",
-   ".Spon": 4,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 4,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 4
  },
  {
@@ -1301,10 +1301,10 @@ data = [
    "longitude": 48.21,
    "latitude": 16.37,
    "Nom": "Osterreichische Bundesgarten",
-   ".Spon": 5,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 5,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 11
  },
  {
@@ -1313,10 +1313,10 @@ data = [
    "longitude": 35.7,
    "latitude": 51.4,
    "Nom": "National Botanical Garden of Iran",
-   ".Spon": 8,
-   ".Exotic": 8,
-   ".Serres": 32,
-   ".Médic": null,
+   "SPON": 8,
+   "EXOTIC": 8,
+   "SERRES": 32,
+   "MEDIC": null,
    "Total Expédié": 48
  },
  {
@@ -1325,10 +1325,10 @@ data = [
    "longitude": 44.41,
    "latitude": 8.93,
    "Nom": "Orto Botanico Hanbury",
-   ".Spon": 4,
-   ".Exotic": 26,
-   ".Serres": null,
-   ".Médic": 13,
+   "SPON": 4,
+   "EXOTIC": 26,
+   "SERRES": null,
+   "MEDIC": 13,
    "Total Expédié": 43
  },
  {
@@ -1337,10 +1337,10 @@ data = [
    "longitude": 47.07,
    "latitude": 15.44,
    "Nom": "Botanischer Garten Institut für",
-   ".Spon": null,
-   ".Exotic": 2,
-   ".Serres": 5,
-   ".Médic": 8,
+   "SPON": null,
+   "EXOTIC": 2,
+   "SERRES": 5,
+   "MEDIC": 8,
    "Total Expédié": 15
  },
  {
@@ -1349,10 +1349,10 @@ data = [
    "longitude": 47.62,
    "latitude": 19.05,
    "Nom": "Hortus Botanicus",
-   ".Spon": 8,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 12,
+   "SPON": 8,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 12,
    "Total Expédié": 25
  },
  {
@@ -1361,10 +1361,10 @@ data = [
    "longitude": 50.78,
    "latitude": 6.08,
    "Nom": "R.W.T.H.A Botanischer Garten",
-   ".Spon": 2,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 3,
+   "SPON": 2,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 3,
    "Total Expédié": 5
  },
  {
@@ -1373,10 +1373,10 @@ data = [
    "longitude": 62.03,
    "latitude": 129.73,
    "Nom": "The Institute for biological problems of cryolitozone SB RAS",
-   ".Spon": 11,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 4,
+   "SPON": 11,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 4,
    "Total Expédié": 16
  },
  {
@@ -1385,10 +1385,10 @@ data = [
    "longitude": 53.55,
    "latitude": 10,
    "Nom": "Universität Hamburg",
-   ".Spon": null,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": 0,
+   "SPON": null,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": 0,
    "Total Expédié": 2
  },
  {
@@ -1397,10 +1397,10 @@ data = [
    "longitude": 50.84,
    "latitude": 4.37,
    "Nom": "Jardin Expérimental Jean Massart",
-   ".Spon": 10,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 10,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 11
  },
  {
@@ -1409,10 +1409,10 @@ data = [
    "longitude": 47.38,
    "latitude": 8.54,
    "Nom": "Universität Zürich",
-   ".Spon": 6,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": 5,
+   "SPON": 6,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": 5,
    "Total Expédié": 13
  },
  {
@@ -1421,10 +1421,10 @@ data = [
    "longitude": 47.26,
    "latitude": 23.26,
    "Nom": "Centrul de Cercetari Biologice",
-   ".Spon": 20,
-   ".Exotic": 23,
-   ".Serres": 1,
-   ".Médic": 4,
+   "SPON": 20,
+   "EXOTIC": 23,
+   "SERRES": 1,
+   "MEDIC": 4,
    "Total Expédié": 48
  },
  {
@@ -1433,10 +1433,10 @@ data = [
    "longitude": 47.71,
    "latitude": 19.24,
    "Nom": "National Botanical Garden",
-   ".Spon": 2,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": 0,
+   "SPON": 2,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": 0,
    "Total Expédié": 6
  },
  {
@@ -1445,10 +1445,10 @@ data = [
    "longitude": 52.44,
    "latitude": 9.74,
    "Nom": "Dr. Heinz Jansen",
-   ".Spon": 3,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 3,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 5
  },
  {
@@ -1457,10 +1457,10 @@ data = [
    "longitude": 54.69,
    "latitude": 25.28,
    "Nom": "Botanical Gardens",
-   ".Spon": null,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 4
  },
  {
@@ -1469,10 +1469,10 @@ data = [
    "longitude": 49.41,
    "latitude": 8.69,
    "Nom": "Botanischer Garten",
-   ".Spon": 14,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 14,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 14
  },
  {
@@ -1481,10 +1481,10 @@ data = [
    "longitude": 43.6,
    "latitude": 1.44,
    "Nom": "Jardin Botanique et Arboretum Henri Gaussen",
-   ".Spon": 7,
-   ".Exotic": 3,
-   ".Serres": 5,
-   ".Médic": 3,
+   "SPON": 7,
+   "EXOTIC": 3,
+   "SERRES": 5,
+   "MEDIC": 3,
    "Total Expédié": 18
  },
  {
@@ -1493,10 +1493,10 @@ data = [
    "longitude": 48.58,
    "latitude": 7.75,
    "Nom": "Jardin Botanique de l'Université",
-   ".Spon": 4,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": 12,
+   "SPON": 4,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": 12,
    "Total Expédié": 19
  },
  {
@@ -1505,10 +1505,10 @@ data = [
    "longitude": 51.34,
    "latitude": 12.37,
    "Nom": "Botanischer Garten der",
-   ".Spon": 16,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 9,
+   "SPON": 16,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 9,
    "Total Expédié": 30
  },
  {
@@ -1517,10 +1517,10 @@ data = [
    "longitude": 53.64,
    "latitude": 23.19,
    "Nom": "Podlaski Ogrod Ziolowy",
-   ".Spon": 15,
-   ".Exotic": 23,
-   ".Serres": null,
-   ".Médic": 4,
+   "SPON": 15,
+   "EXOTIC": 23,
+   "SERRES": null,
+   "MEDIC": 4,
    "Total Expédié": 42
  },
  {
@@ -1529,10 +1529,10 @@ data = [
    "longitude": 48.14,
    "latitude": 11.58,
    "Nom": "Botanischer Garten München-Nymphenburg",
-   ".Spon": 16,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 14,
+   "SPON": 16,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 14,
    "Total Expédié": 30
  },
  {
@@ -1541,10 +1541,10 @@ data = [
    "longitude": 48.31,
    "latitude": 14.29,
    "Nom": "Botanischen Garten und Naturkundliche Station der Stadt Linz",
-   ".Spon": null,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": null,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 2
  },
  {
@@ -1553,10 +1553,10 @@ data = [
    "longitude": 44.43,
    "latitude": 26.09,
    "Nom": "Gradina Botanica \" Dimitrie Brandza\"",
-   ".Spon": null,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": null,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 5
  },
  {
@@ -1565,10 +1565,10 @@ data = [
    "longitude": 46.62,
    "latitude": -1.65,
    "Nom": "Le Potager Extraordinaire",
-   ".Spon": 3,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 3,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 8
  },
  {
@@ -1577,10 +1577,10 @@ data = [
    "longitude": 53.08,
    "latitude": 8.81,
    "Nom": "Botanischer Garten und",
-   ".Spon": 5,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 3,
+   "SPON": 5,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 3,
    "Total Expédié": 9
  },
  {
@@ -1589,10 +1589,10 @@ data = [
    "longitude": 55.7,
    "latitude": 13.19,
    "Nom": "The Botanical Garden",
-   ".Spon": 3,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 3,
+   "SPON": 3,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 3,
    "Total Expédié": 6
  },
  {
@@ -1601,10 +1601,10 @@ data = [
    "longitude": 51.11,
    "latitude": 17.03,
    "Nom": "Department of Biology and Pharmaceutical Botany",
-   ".Spon": 1,
-   ".Exotic": 17,
-   ".Serres": 1,
-   ".Médic": 6,
+   "SPON": 1,
+   "EXOTIC": 17,
+   "SERRES": 1,
+   "MEDIC": 6,
    "Total Expédié": 25
  },
  {
@@ -1613,10 +1613,10 @@ data = [
    "longitude": 46.52,
    "latitude": 6.63,
    "Nom": "Jardin Botanique de Lausanne",
-   ".Spon": 8,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 4,
+   "SPON": 8,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 4,
    "Total Expédié": 12
  },
  {
@@ -1625,10 +1625,10 @@ data = [
    "longitude": 51.89,
    "latitude": 13.9,
    "Nom": "Rogow Arboretum of Warsaw University of Life Sciences",
-   ".Spon": 7,
-   ".Exotic": 5,
-   ".Serres": 32,
-   ".Médic": 3,
+   "SPON": 7,
+   "EXOTIC": 5,
+   "SERRES": 32,
+   "MEDIC": 3,
    "Total Expédié": 49
  },
  {
@@ -1637,10 +1637,10 @@ data = [
    "longitude": 49.41,
    "latitude": 14.66,
    "Nom": "Botanicka zahrada pri VoS a SzeS",
-   ".Spon": 5,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 19,
+   "SPON": 5,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 19,
    "Total Expédié": 25
  },
  {
@@ -1649,10 +1649,10 @@ data = [
    "longitude": 50.59,
    "latitude": 8.67,
    "Nom": "Botanischer Garten der Justus-Liebig-",
-   ".Spon": 4,
-   ".Exotic": 5,
-   ".Serres": 4,
-   ".Médic": 1,
+   "SPON": 4,
+   "EXOTIC": 5,
+   "SERRES": 4,
+   "MEDIC": 1,
    "Total Expédié": 14
  },
  {
@@ -1661,10 +1661,10 @@ data = [
    "longitude": 54.1,
    "latitude": 13.38,
    "Nom": "Botanischer Garten",
-   ".Spon": 1,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 3
  },
  {
@@ -1673,10 +1673,10 @@ data = [
    "longitude": 45.47,
    "latitude": 9.19,
    "Nom": "Edoardo Rossotti",
-   ".Spon": null,
-   ".Exotic": 9,
-   ".Serres": 0,
-   ".Médic": 9,
+   "SPON": null,
+   "EXOTIC": 9,
+   "SERRES": 0,
+   "MEDIC": 9,
    "Total Expédié": 18
  },
  {
@@ -1685,10 +1685,10 @@ data = [
    "longitude": 51.53,
    "latitude": 9.94,
    "Nom": "Experimental Botanischer Garten",
-   ".Spon": 1,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 2
  },
  {
@@ -1697,10 +1697,10 @@ data = [
    "longitude": 43.39,
    "latitude": -1.66,
    "Nom": "Jardin botanique littoral",
-   ".Spon": 10,
-   ".Exotic": 11,
-   ".Serres": null,
-   ".Médic": 9,
+   "SPON": 10,
+   "EXOTIC": 11,
+   "SERRES": null,
+   "MEDIC": 9,
    "Total Expédié": 30
  },
  {
@@ -1709,10 +1709,10 @@ data = [
    "longitude": 50.1,
    "latitude": 14.42,
    "Nom": "Botanicka Zahrada hl.m. Prahy",
-   ".Spon": 1,
-   ".Exotic": 11,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": 11,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 12
  },
  {
@@ -1721,10 +1721,10 @@ data = [
    "longitude": 52.08,
    "latitude": 5.13,
    "Nom": "Utrecht University",
-   ".Spon": 9,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 9,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 9
  },
  {
@@ -1733,10 +1733,10 @@ data = [
    "longitude": 54.09,
    "latitude": 12.13,
    "Nom": "Botanischer Garten",
-   ".Spon": 1,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 2
  },
  {
@@ -1745,10 +1745,10 @@ data = [
    "longitude": 48.47,
    "latitude": 35.04,
    "Nom": "Dnepropetrovsk National",
-   ".Spon": 2,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 2,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 3
  },
  {
@@ -1757,10 +1757,10 @@ data = [
    "longitude": 39.74,
    "latitude": -104.98,
    "Nom": "Denver Botanic Gardens",
-   ".Spon": null,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -1769,10 +1769,10 @@ data = [
    "longitude": 47.72,
    "latitude": 18.73,
    "Nom": "Kovacs Pal",
-   ".Spon": 1,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 5
  },
  {
@@ -1781,10 +1781,10 @@ data = [
    "longitude": 46.68,
    "latitude": 7.1,
    "Nom": "Université de Fribourg, Département de Biologie",
-   ".Spon": 4,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 4,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 6
  },
  {
@@ -1793,10 +1793,10 @@ data = [
    "longitude": 41.61,
    "latitude": 0.63,
    "Nom": "Arboretum Jardi Botanic de Lleida",
-   ".Spon": 4,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 4,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 8
  },
  {
@@ -1805,10 +1805,10 @@ data = [
    "longitude": 50.99,
    "latitude": 13.58,
    "Nom": "Technische Universität Dresden",
-   ".Spon": 4,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 4,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 8
  },
  {
@@ -1817,10 +1817,10 @@ data = [
    "longitude": 52.27,
    "latitude": 8.05,
    "Nom": "Universitat Osnabruck",
-   ".Spon": null,
-   ".Exotic": 8,
-   ".Serres": 0,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 8,
+   "SERRES": 0,
+   "MEDIC": null,
    "Total Expédié": 8
  },
  {
@@ -1829,10 +1829,10 @@ data = [
    "longitude": 48.67,
    "latitude": 6.15,
    "Nom": "Conservatoire et Jardins",
-   ".Spon": 1,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": 7,
+   "SPON": 1,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": 7,
    "Total Expédié": 10
  },
  {
@@ -1841,10 +1841,10 @@ data = [
    "longitude": 45.78,
    "latitude": 3.08,
    "Nom": "Jardin Botanique",
-   ".Spon": 4,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 4,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 6
  },
  {
@@ -1853,10 +1853,10 @@ data = [
    "longitude": 50.63,
    "latitude": 3.07,
    "Nom": "Jardin des plantes",
-   ".Spon": null,
-   ".Exotic": 6,
-   ".Serres": 1,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 6,
+   "SERRES": 1,
+   "MEDIC": null,
    "Total Expédié": 7
  },
  {
@@ -1865,10 +1865,10 @@ data = [
    "longitude": 52.52,
    "latitude": 13.39,
    "Nom": "Humboldt-Universität \n zu Berlin Institut fur Biologie",
-   ".Spon": null,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 2
  },
  {
@@ -1877,10 +1877,10 @@ data = [
    "longitude": 50.93,
    "latitude": 4.33,
    "Nom": "Jardin botanique de Meise",
-   ".Spon": 9,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 9,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 11
  },
  {
@@ -1889,10 +1889,10 @@ data = [
    "longitude": 35.02,
    "latitude": 135.76,
    "Nom": "Field Science Education and Research Center",
-   ".Spon": null,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -1901,10 +1901,10 @@ data = [
    "longitude": 60.45,
    "latitude": 22.27,
    "Nom": "Botanical Garden",
-   ".Spon": null,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 21,
+   "SPON": null,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 21,
    "Total Expédié": 22
  },
  {
@@ -1913,10 +1913,10 @@ data = [
    "longitude": 49.12,
    "latitude": -56.7,
    "Nom": "MUN Botanical Garden",
-   ".Spon": null,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 5
  },
  {
@@ -1925,10 +1925,10 @@ data = [
    "longitude": 45.98,
    "latitude": -1.33,
    "Nom": "A.I.C.P.C.",
-   ".Spon": 6,
-   ".Exotic": 8,
-   ".Serres": 7,
-   ".Médic": 16,
+   "SPON": 6,
+   "EXOTIC": 8,
+   "SERRES": 7,
+   "MEDIC": 16,
    "Total Expédié": 37
  },
  {
@@ -1937,10 +1937,10 @@ data = [
    "longitude": 51.05,
    "latitude": 3.73,
    "Nom": "Plantentuin",
-   ".Spon": null,
-   ".Exotic": 8,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 8,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 8
  },
  {
@@ -1949,10 +1949,10 @@ data = [
    "longitude": 54.32,
    "latitude": 10.14,
    "Nom": "Pharmazeutiches Institut der Universität Kiel",
-   ".Spon": 6,
-   ".Exotic": 11,
-   ".Serres": null,
-   ".Médic": 4,
+   "SPON": 6,
+   "EXOTIC": 11,
+   "SERRES": null,
+   "MEDIC": 4,
    "Total Expédié": 21
  },
  {
@@ -1961,10 +1961,10 @@ data = [
    "longitude": 52.23,
    "latitude": 21.01,
    "Nom": "Botanical Garden -Center for Biological \n Diversity Conservation",
-   ".Spon": 3,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": 7,
+   "SPON": 3,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": 7,
    "Total Expédié": 13
  },
  {
@@ -1973,10 +1973,10 @@ data = [
    "longitude": 48.52,
    "latitude": 9.05,
    "Nom": "Botanischer Garten der",
-   ".Spon": 3,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 3,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 6
  },
  {
@@ -1985,10 +1985,10 @@ data = [
    "longitude": 43.77,
    "latitude": 11.26,
    "Nom": "Orto Botanico Sezione del Museo di Storia Naturale dell' Universita' di Firenze",
-   ".Spon": 17,
-   ".Exotic": 14,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 17,
+   "EXOTIC": 14,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 31
  },
  {
@@ -1997,10 +1997,10 @@ data = [
    "longitude": 36.72,
    "latitude": -4.42,
    "Nom": "Jardin Botanico-Historico de Malaga",
-   ".Spon": null,
-   ".Exotic": 7,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 7,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 7
  },
  {
@@ -2009,10 +2009,10 @@ data = [
    "longitude": 39.3,
    "latitude": -82.95,
    "Nom": "Barry Glick",
-   ".Spon": 2,
-   ".Exotic": 2,
-   ".Serres": null,
-   ".Médic": 3,
+   "SPON": 2,
+   "EXOTIC": 2,
+   "SERRES": null,
+   "MEDIC": 3,
    "Total Expédié": 7
  },
  {
@@ -2021,10 +2021,10 @@ data = [
    "longitude": 49.75,
    "latitude": 13.38,
    "Nom": "Zoological and Botanical Garden",
-   ".Spon": 4,
-   ".Exotic": null,
-   ".Serres": 7,
-   ".Médic": null,
+   "SPON": 4,
+   "EXOTIC": null,
+   "SERRES": 7,
+   "MEDIC": null,
    "Total Expédié": 11
  },
  {
@@ -2033,10 +2033,10 @@ data = [
    "longitude": 41.29,
    "latitude": 69.17,
    "Nom": "Forest Steppe Selection",
-   ".Spon": 6,
-   ".Exotic": 21,
-   ".Serres": 1,
-   ".Médic": null,
+   "SPON": 6,
+   "EXOTIC": 21,
+   "SERRES": 1,
+   "MEDIC": null,
    "Total Expédié": 28
  },
  {
@@ -2045,10 +2045,10 @@ data = [
    "longitude": 54.32,
    "latitude": 10.14,
    "Nom": "Botanischer Garten",
-   ".Spon": 4,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 2,
+   "SPON": 4,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 2,
    "Total Expédié": 11
  },
  {
@@ -2057,10 +2057,10 @@ data = [
    "longitude": 45.81,
    "latitude": 15.98,
    "Nom": "Botanical Garden",
-   ".Spon": null,
-   ".Exotic": null,
-   ".Serres": 1,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": null,
+   "SERRES": 1,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -2069,10 +2069,10 @@ data = [
    "longitude": 40.42,
    "latitude": -3.7,
    "Nom": "Real Jardin Botanico Juan carlos I",
-   ".Spon": null,
-   ".Exotic": null,
-   ".Serres": 1,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": null,
+   "SERRES": 1,
+   "MEDIC": null,
    "Total Expédié": 1
  },
  {
@@ -2081,10 +2081,10 @@ data = [
    "longitude": 47.66,
    "latitude": 9.18,
    "Nom": "Universität Konstanz, facultät für Biologie",
-   ".Spon": 3,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 3,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 3
  },
  {
@@ -2093,10 +2093,10 @@ data = [
    "longitude": 49.02,
    "latitude": 12.1,
    "Nom": "Botanischer Garden",
-   ".Spon": null,
-   ".Exotic": 3,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": null,
+   "EXOTIC": 3,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 3
  },
  {
@@ -2105,10 +2105,10 @@ data = [
    "longitude": 49.44,
    "latitude": 1.09,
    "Nom": "Jardin botanique/jardin des plantes",
-   ".Spon": 3,
-   ".Exotic": 6,
-   ".Serres": 6,
-   ".Médic": 2,
+   "SPON": 3,
+   "EXOTIC": 6,
+   "SERRES": 6,
+   "MEDIC": 2,
    "Total Expédié": 17
  },
  {
@@ -2117,10 +2117,10 @@ data = [
    "longitude": 50.64,
    "latitude": 13.82,
    "Nom": "Botanic Garden Teplice",
-   ".Spon": 8,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": 16,
+   "SPON": 8,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": 16,
    "Total Expédié": 28
  },
  {
@@ -2129,10 +2129,10 @@ data = [
    "longitude": 51.95,
    "latitude": 7.61,
    "Nom": "Botanischer Garten der Westfaelische Wilhems",
-   ".Spon": 18,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 18,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 24
  },
  {
@@ -2141,10 +2141,10 @@ data = [
    "longitude": 47.61,
    "latitude": 19.35,
    "Nom": "Botanical garden",
-   ".Spon": 3,
-   ".Exotic": 1,
-   ".Serres": null,
-   ".Médic": 28,
+   "SPON": 3,
+   "EXOTIC": 1,
+   "SERRES": null,
+   "MEDIC": 28,
    "Total Expédié": 32
  },
  {
@@ -2153,10 +2153,10 @@ data = [
    "longitude": 52.37,
    "latitude": 16.81,
    "Nom": "Hortus botanicus Inst.Fibrarum Naturalium",
-   ".Spon": 16,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 11,
+   "SPON": 16,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 11,
    "Total Expédié": 27
  },
  {
@@ -2165,10 +2165,10 @@ data = [
    "longitude": 45.48,
    "latitude": 9.3,
    "Nom": "Institution Scientific Botanic",
-   ".Spon": 2,
-   ".Exotic": 20,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 2,
+   "EXOTIC": 20,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 22
  },
  {
@@ -2177,10 +2177,10 @@ data = [
    "longitude": 49.99,
    "latitude": 36.27,
    "Nom": "Botanic Garden of the V.N. Karazin",
-   ".Spon": 8,
-   ".Exotic": 16,
-   ".Serres": 6,
-   ".Médic": 4,
+   "SPON": 8,
+   "EXOTIC": 16,
+   "SERRES": 6,
+   "MEDIC": 4,
    "Total Expédié": 34
  },
  {
@@ -2189,10 +2189,10 @@ data = [
    "longitude": 33.96,
    "latitude": -83.38,
    "Nom": "Dr John Ruter University of Georgia",
-   ".Spon": null,
-   ".Exotic": 14,
-   ".Serres": null,
-   ".Médic": 6,
+   "SPON": null,
+   "EXOTIC": 14,
+   "SERRES": null,
+   "MEDIC": 6,
    "Total Expédié": 20
  },
  {
@@ -2201,10 +2201,10 @@ data = [
    "longitude": 52.47,
    "latitude": 13.3,
    "Nom": "Botanischer Garten und Botanisches Museum",
-   ".Spon": 10,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 10,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 10
  },
  {
@@ -2213,10 +2213,10 @@ data = [
    "longitude": 52.68,
    "latitude": 22.5,
    "Nom": "Muzeum Rolnictwa",
-   ".Spon": 12,
-   ".Exotic": 31,
-   ".Serres": null,
-   ".Médic": 7,
+   "SPON": 12,
+   "EXOTIC": 31,
+   "SERRES": null,
+   "MEDIC": 7,
    "Total Expédié": 50
  },
  {
@@ -2225,10 +2225,10 @@ data = [
    "longitude": 47.39,
    "latitude": 0.69,
    "Nom": "Direction Scientifique du Jardin Botanique",
-   ".Spon": 13,
-   ".Exotic": 5,
-   ".Serres": null,
-   ".Médic": 12,
+   "SPON": 13,
+   "EXOTIC": 5,
+   "SERRES": null,
+   "MEDIC": 12,
    "Total Expédié": 30
  },
  {
@@ -2237,10 +2237,10 @@ data = [
    "longitude": 49.19,
    "latitude": 16.61,
    "Nom": "Botanical Garden, Faculty Of Science",
-   ".Spon": 21,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 17,
+   "SPON": 21,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 17,
    "Total Expédié": 38
  },
  {
@@ -2249,10 +2249,10 @@ data = [
    "longitude": 49.18,
    "latitude": -0.37,
    "Nom": "Ville de Caen Direction de l'environnement et du cadre de vie",
-   ".Spon": 18,
-   ".Exotic": 4,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": 18,
+   "EXOTIC": 4,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 23
  },
  {
@@ -2261,10 +2261,10 @@ data = [
    "longitude": 47.47,
    "latitude": -0.55,
    "Nom": "Jardin Botanique - UFR des Sciences",
-   ".Spon": 20,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 7,
+   "SPON": 20,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 7,
    "Total Expédié": 27
  },
  {
@@ -2273,10 +2273,10 @@ data = [
    "longitude": 48.78,
    "latitude": 9.18,
    "Nom": "Wilhelma Zoologisch-",
-   ".Spon": null,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 5,
+   "SPON": null,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 5,
    "Total Expédié": 5
  },
  {
@@ -2285,10 +2285,10 @@ data = [
    "longitude": 45.47,
    "latitude": 9.19,
    "Nom": "Giardino Botanico \"Caplez\"",
-   ".Spon": 3,
-   ".Exotic": 15,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 3,
+   "EXOTIC": 15,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": 18
  },
  {
@@ -2297,10 +2297,10 @@ data = [
    "longitude": 40.38,
    "latitude": 49.83,
    "Nom": "Azerbaijan National Academy of sciences",
-   ".Spon": 20,
-   ".Exotic": 5,
-   ".Serres": 31,
-   ".Médic": 1,
+   "SPON": 20,
+   "EXOTIC": 5,
+   "SERRES": 31,
+   "MEDIC": 1,
    "Total Expédié": 57
  },
  {
@@ -2309,10 +2309,10 @@ data = [
    "longitude": 47.66,
    "latitude": 9.18,
    "Nom": "Universität Konstanz, facultät für Biologie",
-   ".Spon": 1,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": null,
+   "SPON": 1,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": null,
    "Total Expédié": null
  },
  {
@@ -2321,10 +2321,10 @@ data = [
    "longitude": -22.91,
    "latitude": -43.21,
    "Nom": "Instituto de Pesquisas",
-   ".Spon": null,
-   ".Exotic": null,
-   ".Serres": null,
-   ".Médic": 1,
+   "SPON": null,
+   "EXOTIC": null,
+   "SERRES": null,
+   "MEDIC": 1,
    "Total Expédié": 1
  }
 ]
