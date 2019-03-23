@@ -7,6 +7,7 @@ LEAF_RATIO_LENGTH = 1.2;
 BRANCH_SHIFT = 2;
 MIN_BRANCH_WEIGHT = 0.1;
 MAX_BRANCH_WEIGHT = 0.5;
+MAX_FRAME_COUNT_APPEARANCE = 30;
 
 colors = ['yellow', 'blue', 'green'];
 gardens = [];
@@ -40,7 +41,7 @@ draw = () => {
                 node.shiftX = randomBool(1, 10) ? () => 0 : sin;
                 node.shiftY = randomBool(1, 10) ? () => 0 : cos;
             }
-            node.speed = node.isLeaf ? random(2, 5) : 1;
+            node.speed = node.isLeaf ? random(0, 1) : 1;
         }
         node.count += 0.1;
         node.x += node.shiftX(node.count) * node.speed;
@@ -54,7 +55,7 @@ draw = () => {
             lastLabelUpdate = now;
     }
     if (root && root.childs.length > 1) {
-        leaves.forEach(leaf => leaf.drawCurve());
+        leaves.forEach(leaf => leaf.drawCurveVertex());
         // labelledLeaves.forEach(leaf => leaf.drawLabel());
     }
 }
@@ -80,8 +81,6 @@ class Branch {
         this.childs = [];
         this.rotation = rotation;
         this.length = length;
-        this.garden = undefined;
-        this.count = 0;
     }
 
     split = () => {
@@ -116,13 +115,16 @@ class Branch {
         return path;
     }
 
-    drawCurve = () => {
+    drawCurveVertex = () => {
         this.colors.forEach(color => {
+            if (color.startingFrame > frameCount)
+                return;
             beginShape();
             noFill();
             strokeWeight(color.weight);
             stroke(color.r, color.g, color.b);
             color.path.forEach(point => {
+                stroke(color.r, color.g, color.b);
                 curveVertex(point.x(), point.y());
             })
             endShape();
@@ -133,7 +135,7 @@ class Branch {
         fill(0);
         stroke(0);
         ellipse(this.end.x, this.end.y, 10, 10);
-        textAlign(LEFT,BOTTOM);
+        textAlign(CENTER,BOTTOM);
         text(this.garden.Nom + "\n" + this.garden.Ville, this.end.x, this.end.y - 10);
     }
 }
@@ -209,8 +211,9 @@ matchGardensToLeaves = () => {
     leaves.forEach(leaf => {
         leaf.colors.forEach(color => {
             color.weight = (color.value / maxExported) * (MAX_BRANCH_WEIGHT - MIN_BRANCH_WEIGHT) + MIN_BRANCH_WEIGHT;
-        })
-    })
+            color.startingFrame = random(0, MAX_FRAME_COUNT_APPEARANCE);
+        });
+    });
 }
 
 randomBool = (chances = 1, total = 2) => random(0, total) <= chances;
