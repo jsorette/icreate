@@ -153,11 +153,11 @@ class Branch {
             this.labelId = `label-${labelIds++}`;
             this.label.id(this.labelId);
 
-            let name = createSpan(this.garden.Nom);
+            let name = createSpan(this.garden.NAME);
             name.addClass('name');
             this.label.child(name);
 
-            let location = createSpan(`${this.garden.Ville}, ${this.garden.Pays}`);
+            let location = createSpan(`${this.garden.CITY}, ${this.garden.COUNTRY}`);
             location.addClass('location');
             this.label.child(location);
 
@@ -228,8 +228,8 @@ filterGardensByDetectedColor = () => {
     gardens = data.filter(garden =>
         (garden.SERRES > 0 && colors.includes('yellow'))
         || (garden.MEDIC > 0 && colors.includes('green'))
-        || (garden.SPON > 0 && colors.includes('blue'))
-        || (garden.EXOTIC > 0 && colors.includes('red'))
+        || (garden.SPON > 0 && colors.includes('red'))
+        || (garden.EXOTIC > 0 && colors.includes('blue'))
     );
 }
 
@@ -254,9 +254,31 @@ generateRoots = () => {
     });
 }
 
+sortGardensByCountryAndLatitude = () => {
+    let countries = {};
+    gardens.forEach(garden => {
+        if (!countries[garden.COUNTRY])
+            countries[garden.COUNTRY] = {
+                gardens: [],
+                averageLatitude: 0
+            };
+        countries[garden.COUNTRY].gardens.push(garden);
+        countries[garden.COUNTRY].averageLatitude += garden.LATITUDE;
+    });
+    Object.keys(countries).forEach(countryName => {
+        const country = countries[countryName];
+        country.averageLatitude /= country.gardens.length;
+        country.gardens = country.gardens.sort((a, b) => a.LATITUDE < b.LATITUDE ? -1 : 1);
+    });
+    countries = Object.values(countries).sort((a, b) => a.averageLatitude < b.averageLatitude ? -1 : 1);
+    
+    gardens = countries.reduce((gardens, country) => gardens.concat(country.gardens), []);
+}
+
 matchGardensToLeaves = () => {
-    gardens = gardens.sort((a, b) => a.longitude < b.longitude ? -1 : 1);
+    sortGardensByCountryAndLatitude();
     leaves = leaves.sort((a, b) => a.end.x < b.end.x ? -1 : 1);
+
     for (var i = 0; i < leaves.length; i++) {
         const garden = gardens[i];
         const leaf = leaves[i];
