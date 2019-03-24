@@ -1,4 +1,4 @@
-NB_LABELS = 5;
+NB_LABELS = 2;
 LABEL_DISPLAY_LENGTH = 5;
 ROOT_ROTATION = -1.75;
 ROOT_LENGTH = 30;
@@ -10,7 +10,7 @@ MAX_BRANCH_WEIGHT = 0.5;
 MAX_FRAME_COUNT_APPEARANCE = 30;
 NB_STEPS_FULL_APPEARANCE = 5;
 
-colors = ['yellow', 'blue', 'green'];
+colors = ['yellow', 'green', 'blue'];
 gardens = [];
 leaves = [];
 root = undefined;
@@ -19,6 +19,7 @@ minExported = 1;
 maxExported = 1;
 lastLabelUpdate = undefined;
 labelledLeaves = [];
+labelIds = 0;
 
 setup = () => {
     createCanvas(windowWidth, windowHeight);
@@ -102,8 +103,8 @@ class Branch {
             this.drawCurve(color);
             endShape();
         });
-        if (this.labelled)
-        this.drawLabel();
+        if (this.labelled && frameCount > MAX_FRAME_COUNT_APPEARANCE)
+            this.drawLabel();
     }
 
     drawCurve = (color) => {
@@ -143,12 +144,49 @@ class Branch {
     }
 
     drawLabel = () => {
-        fill(0);
-        stroke(0);
-        strokeWeight(0.1);
-        ellipse(this.end.x, this.end.y, 10, 10);
-        textAlign(CENTER, BOTTOM);
-        text(this.garden.Nom + "\n" + this.garden.Ville, this.end.x, this.end.y - 10);
+        fill(150,150,150);
+        ellipseMode(CENTER);
+        ellipse(this.end.x, this.end.y, 6, 6);
+        if (!this.label) {
+            this.label = createDiv();
+            this.label.addClass('label');
+            this.labelId = `label-${labelIds++}`;
+            this.label.id(this.labelId);
+
+            let name = createSpan(this.garden.Nom);
+            name.addClass('name');
+            this.label.child(name);
+
+            let location = createSpan(`${this.garden.Ville}, ${this.garden.Pays}`);
+            location.addClass('location');
+            this.label.child(location);
+
+            let colorsDiv = createDiv();
+            colorsDiv.addClass('colors');
+            this.colors.forEach(aColor => {
+                const { r, g, b, value} = aColor;
+
+                let dot = createDiv();
+                dot.addClass('dot');
+                dot.style('background-color', color(r, g, b));
+                colorsDiv.child(dot);
+
+                let valueSpan = createSpan(value);
+                valueSpan.addClass('value');
+                colorsDiv.child(valueSpan);
+            });
+            this.label.child(colorsDiv);
+        }
+        const { width, height } = this.label.size();
+        this.label.position(this.end.x - (width / 2), this.end.y - height - 10);
+    }
+
+    removeLabel = () => {
+        if (this.label) {
+            this.label.remove();
+            this.label = undefined;
+        }
+        this.labelled = false;
     }
 }
 
@@ -176,7 +214,7 @@ shiftNodes = () => {
 selectLabelledLeaves = () => {
     const now = new Date();
     if (!lastLabelUpdate || (now - lastLabelUpdate) / 1000 > LABEL_DISPLAY_LENGTH) {
-        labelledLeaves.forEach(leaf => leaf.labelled = false);
+        labelledLeaves.forEach(leaf => leaf.removeLabel());
         for (let i = 0; i < NB_LABELS; i++) {
             const leaf = leaves[Math.round(random(0, leaves.length - 1))];
             leaf.labelled = true;
