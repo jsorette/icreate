@@ -3,19 +3,75 @@
 <head>
 	<meta charset="utf-8" />
 	<title>iCreate | Liu</title>
-	<link rel="shortcut icon" href="logo.png" />
+	<link rel="shortcut icon" href="images/logo.png" />
+	<link rel="stylesheet" href="lib/pickr.min.css">
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="lib/p5.min.js"></script>
 	<script type="text/javascript" src="lib/p5.dom.js"></script>
 	<script type="text/javascript" src="lib/tracking-min.js"></script>
 	<script type="text/javascript" src="lib/rgb-to-hsl.js"></script>
 	<script type="text/javascript" src="lib/shuffle-array.min.js"></script>
+	<script type="text/javascript" src="lib/pickr.min.js"></script>
 	<script type="text/javascript" src="data.js"></script>
 	<script type="text/javascript" src="sketch.js"></script>
 	<script type="text/javascript" src="color-tracking.js"></script>
 </head>
 <body>
+	<div id="settings">
+		<div id="settings-header">
+			<img id="settings-button">
+			<span id="settings-title">Paramètres</span>
+		</div>
+		<div id="controllers" visibility="hidden">
+			<div class="controller">
+				<input type="number" id="label-count" min="0" step="1">
+				<span>Etiquettes</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="label-display-duration" min="0" step="1">
+				<span>Temps d'affichage par étiquette</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="branch-min-weight" min="0" step="0.1">
+				<span>Epaisseur minimale</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="branch-max-weight" min="0" step="0.1">
+				<span>Epaisseur maximale</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="branch-split-count" min="2" step="1">
+				<span>Nombre de divisions par noeud</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="branch-origin-length" min="0" step="1">
+				<span>Longueur initiale</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="branch-length-ratio" min="0" step="0.1">
+				<span>Ratio longueur après division</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="branch-origin-rotation" step="0.1">
+				<span>Angle de rotation maximal</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="branch-max-shift" min="0" step="0.1">
+				<span>Décalage de pixel maximal</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="branch-max-frame-count-appearance" min="0" step="0">
+				<span>Image d'apparition maximale</span>
+			</div>
+			<div class="controller">
+				<input type="number" id="frame-rate" min="0" step="0.1">
+				<span>Images par secondes</span>
+			</div>
+		</div>
+	</div>
 	<video id="video" width="320" height="240" autoPlay loop muted></video>
 	<canvas id="canvas" width="320" height="240"></canvas>
+
+	<script type="text/javascript" src="settings.js"></script>
 </body>
 </html>

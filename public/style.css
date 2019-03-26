@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
 
+:root {
+	--dark-grey: #121212;
+	--background: var(--dark-grey);
+	--primary-color: #2CDD6D;
+}
+
 body, html {
+	font-family: 'Montserrat', sans-serif;
 	padding: 0;
 	margin: 0;
 	width: 100%;
 	height: 100%;
 	overflow-y: hidden;
+	background: var(--background);
+	color: var(--dark-grey);
 }
 
 #video, #canvas {
@@ -15,28 +24,34 @@ body, html {
 }
 
 .label {
-	font-family: 'Montserrat', sans-serif;
 	font-size: 0.75em;
-	color: #505050;
 	display: flex;
 	flex-direction: column;
 	max-width: 200px;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-    border-radius: 5px;
-    background-color: white;
-    padding: 12px;
-    -webkit-animation: fadeIn 1s;
-	animation: fadeIn 1s;
+	border-radius: 5px;
+	background-color: white;
+	padding: 12px;
+	-webkit-animation: fadeIn .5s;
+	animation: fadeIn .5s;
 	text-align: center;
 }
+
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}  
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 @keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .name {
@@ -44,10 +59,8 @@ body, html {
 }
 
 .location {
-	color: #707070;
 	text-transform: uppercase;
-	font-size: 0.75em;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 .colors {
@@ -72,4 +85,98 @@ body, html {
 
 .colors .value:last-child {
 	margin-right: 0;
+}
+
+#settings {
+	z-index: 1000;
+	margin: 16px;
+	position: absolute;
+}
+
+#settings-header {
+	margin-top: 16px;
+	margin-left: 16px;
+	display: flex;
+	align-items: center;
+}
+
+#settings-button {
+	width: 32px;
+	height: 32px;
+	margin-right: 16px;
+	cursor: pointer;
+	content: url("images/settings.svg");
+    -webkit-animation: rotating 10s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#settings-title {
+	font-weight: 600;
+	color: white;
+}
+
+#settings-title,
+#controllers {
+	visibility: hidden;
+}
+
+#settings.is-active #settings-title,
+#settings.is-active #controllers {
+	visibility: visible;
+}
+
+#controllers {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.75em;
+	margin-top: 16px;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .5), 0 1px 3px 1px rgba(60, 64, 67, .15);
+	box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .5), 0 1px 3px 1px rgba(60, 64, 67, .15);
+	background: white;
+	padding: 16px;
+	border-radius: 5px;
+}
+
+#controllers input {
+	font-family: 'Montserrat', sans-serif;
+	max-width: 50px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-right: 12px;
+	background: #f1f1f1;
+	border: none;
+	padding: 4px 0;
+	border-radius: 3px;
+	text-align: center;
+}
+
+#controllers :first-child input {
+	margin-top: 0;
+}
+
+#controllers :last-child input {
+	margin-bottom: 0;
+}
+
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+	outline-color: var(--primary-color);
+	caret-color: var(--primary-color);
+}
+
+#controllers span {
+	font-weight: 500;
 }
