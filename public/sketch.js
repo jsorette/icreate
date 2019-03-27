@@ -11,8 +11,8 @@ BRANCH_MAX_FRAME_COUNT_APPEARANCE = 30;
 BRANCH_FRAME_COUNT_BY_GROWTH_STEP = 5;
 FRAME_RATE = 20;
 
-colors = ['green', 'red', 'yellow', 'green'];
-gardens = [];
+previousColors = [];
+colors = [];
 leaves = [];
 origin = undefined;
 nodes = [];
@@ -39,10 +39,13 @@ draw = () => {
 }
 
 onColorsChanged = () => {
-    filterGardensByDetectedColor();
-    generateRoots();
-    matchGardensToLeaves();
+  console.log(previousColors);
     labelledLeaves.forEach(leaf => leaf.removeLabel());
+    if (colors.length == 0)
+      generateRoots();
+    matchGardensToLeaves();
+    setWeight();
+    previousColors = Array.from(colors);
 }
 
 class Branch {
@@ -221,15 +224,6 @@ selectLabelledLeaves = (force=false) => {
     }
 }
 
-filterGardensByDetectedColor = () => {
-    gardens = data.filter(garden =>
-        (garden.SERRES > 0 && colors.includes('yellow'))
-        || (garden.MEDIC > 0 && colors.includes('green'))
-        || (garden.SPON > 0 && colors.includes('red'))
-        || (garden.EXOTIC > 0 && colors.includes('blue'))
-    );
-}
-
 generateRoots = () => {
     origin = new Branch(
         { x: width / 2, y: height, isOrigin: true },
@@ -248,6 +242,7 @@ generateRoots = () => {
     leaves.forEach(leaf => {
         leaf.path = leaf.generatePath();
         leaf.end.isLeaf = true;
+        leaf.colors = [];
     });
 }
 
@@ -268,8 +263,34 @@ sortGardensByCountryAndLatitude = () => {
         country.gardens = country.gardens.sort((a, b) => a.LATITUDE < b.LATITUDE ? -1 : 1);
     });
     countries = Object.values(countries).sort((a, b) => a.averageLatitude < b.averageLatitude ? -1 : 1);
-    
+
     gardens = countries.reduce((gardens, country) => gardens.concat(country.gardens), []);
+}
+
+matchColorToLeaf = (leaf, colorName, type, r, g, b) => {
+    if (leaf.garden[type] && colors.includes(colorName) && !previousColors.includes(colorName)) {
+      let color = { r, g, b, value: leaf.garden[type] };
+      color.path = leaf.path.map((point, index) => {
+          const randomShift = () => {
+              if ((index > 1 || index < leaf.path.length - 2))
+                  return randomBool() ? -BRANCH_MAX_SHIFT : BRANCH_MAX_SHIFT;
+              return 0;
+          }
+          const shiftX = randomShift();
+          const shiftY = randomShift();
+          return {
+              x: () => point.x + shiftX,
+              y: () => point.y + shiftY
+          };
+      });
+      color.name = colorName;
+      color.startingFrame = random(frameCount, frameCount + BRANCH_MAX_FRAME_COUNT_APPEARANCE);
+      color.lastCheckPoint = 2;
+      color.count = 1;
+      leaf.colors.push(color);
+    }
+    else if (!colors.includes(colorName))
+        leaf.colors = leaf.colors.filter(color => color.name != colorName);
 }
 
 matchGardensToLeaves = () => {
@@ -279,56 +300,23 @@ matchGardensToLeaves = () => {
     for (var i = 0; i < leaves.length; i++) {
         const garden = gardens[i];
         const leaf = leaves[i];
-
         leaf.garden = garden;
-        leaf.colors = [];
-
-        if (garden.SPON && colors.includes('red'))
-            leaf.colors.push({ r: 255, g: 21, b: 17, value: garden.SPON });
-        if (garden.EXOTIC && colors.includes('blue'))
-            leaf.colors.push({ r: 4, g: 163, b: 255, value: garden.EXOTIC });
-        if (garden.SERRES && colors.includes('yellow'))
-            leaf.colors.push({ r: 232, g: 145, b: 21, value: garden.SERRES });
-        if (garden.MEDIC && colors.includes('green'))
-            leaf.colors.push({ r: 44, g: 221, b: 109, value: garden.MEDIC });
+        matchColorToLeaf(leaf, 'blue', 'EXOTIC', 4, 163, 255);
+        matchColorToLeaf(leaf, 'red', 'SPON', 255, 21, 17);
+        matchColorToLeaf(leaf, 'yellow', 'SERRES', 232, 145, 21);
+        matchColorToLeaf(leaf, 'green', 'MEDIC', 44, 221, 109);
         shuffle(leaf.colors);
-
-        leaf.colors.forEach(color => {
-            if (color.value > maxExported)
-                maxExported = color.value;
-            color.path = leaf.path.map((point, index) => {
-                const randomShift = () => {
-                    if ((index > 1 || index < leaf.path.length - 2))
-                        return randomBool() ? -BRANCH_MAX_SHIFT : BRANCH_MAX_SHIFT;
-                    return 0;
-                }
-                const shiftX = randomShift();
-                const shiftY = randomShift();
-                return {
-                    x: () => point.x + shiftX,
-                    y: () => point.y + shiftY
-                };
-            });
-        });
     }
-    setWeight();
-    setStartingFrame();
 }
 
 setWeight = () => {
+    leaf.colors.forEach(color => {
+        if (color.value > maxExported)
+            maxExported = color.value;
+    });
     leaves.forEach(leaf => {
         leaf.colors.forEach(color => {
             color.weight = (color.value / maxExported) * (BRANCH_MAX_WEIGHT - BRANCH_MIN_WEIGHT) + BRANCH_MIN_WEIGHT;
-        });
-    });
-}
-
-setStartingFrame = () => {
-    leaves.forEach(leaf => {
-        leaf.colors.forEach(color => {
-            color.startingFrame = random(frameCount, frameCount + BRANCH_MAX_FRAME_COUNT_APPEARANCE);
-            color.lastCheckPoint = 2;
-            color.count = 1;
         });
     });
 }
