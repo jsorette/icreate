@@ -14,6 +14,7 @@ FRAME_RATE = 20;
 previousColors = [];
 colors = [];
 leaves = [];
+activeLeaves = [];
 origin = undefined;
 nodes = [];
 minExported = 1;
@@ -25,13 +26,12 @@ labelIds = 0;
 setup = () => {
     createCanvas(windowWidth, windowHeight);
     smooth(10);
-    onColorsChanged();
     frameRate(FRAME_RATE);
 }
 
 draw = () => {
     clear();
-    if (origin && origin.childs.length > 1) {
+    if (origin && activeLeaves.length > 0) {
         shiftNodes();
         selectLabelledLeaves();
         leaves.forEach(leaf => leaf.draw());
@@ -39,7 +39,6 @@ draw = () => {
 }
 
 onColorsChanged = () => {
-  console.log(previousColors);
     labelledLeaves.forEach(leaf => leaf.removeLabel());
     if (colors.length == 0)
       generateRoots();
@@ -216,7 +215,7 @@ selectLabelledLeaves = (force=false) => {
     if (force || !lastLabelUpdate || (now - lastLabelUpdate) / 1000 > LABEL_DISPLAY_DURATION) {
         labelledLeaves.forEach(leaf => leaf.removeLabel());
         for (let i = 0; i < LABEL_COUNT; i++) {
-            const leaf = leaves[Math.round(random(0, leaves.length - 1))];
+            const leaf = activeLeaves[Math.round(random(0, activeLeaves.length - 1))];
             leaf.labelled = true;
             labelledLeaves.push(leaf);
         }
@@ -288,6 +287,8 @@ matchColorToLeaf = (leaf, colorName, type, r, g, b) => {
       color.lastCheckPoint = 2;
       color.count = 1;
       leaf.colors.push(color);
+      if (color.value > maxExported)
+          maxExported = color.value;
     }
     else if (!colors.includes(colorName))
         leaf.colors = leaf.colors.filter(color => color.name != colorName);
@@ -296,7 +297,7 @@ matchColorToLeaf = (leaf, colorName, type, r, g, b) => {
 matchGardensToLeaves = () => {
     sortGardensByCountryAndLatitude();
     leaves = leaves.sort((a, b) => a.end.x < b.end.x ? -1 : 1);
-
+    activeLeaves = [];
     for (var i = 0; i < leaves.length; i++) {
         const garden = gardens[i];
         const leaf = leaves[i];
@@ -306,14 +307,12 @@ matchGardensToLeaves = () => {
         matchColorToLeaf(leaf, 'yellow', 'SERRES', 232, 145, 21);
         matchColorToLeaf(leaf, 'green', 'MEDIC', 44, 221, 109);
         shuffle(leaf.colors);
+        if (leaf.colors.length > 0)
+            activeLeaves.push(leaf);
     }
 }
 
 setWeight = () => {
-    leaf.colors.forEach(color => {
-        if (color.value > maxExported)
-            maxExported = color.value;
-    });
     leaves.forEach(leaf => {
         leaf.colors.forEach(color => {
             color.weight = (color.value / maxExported) * (BRANCH_MAX_WEIGHT - BRANCH_MIN_WEIGHT) + BRANCH_MIN_WEIGHT;

@@ -14,6 +14,30 @@ window.addEventListener('click', e => {
 
 settingsButton.addEventListener('click', toggleSettings);
 
+['red', 'yellow', 'green', 'blue'].forEach(color => {
+    let typeSwitch = document.getElementById(`color-${color}`);
+    typeSwitch.addEventListener('change', () => {
+        if (colors.includes(color))
+            colors = colors.filter(c => c !== color);
+        else
+            colors.push(color);
+        onColorsChanged();
+    }, false);
+});
+
+onColorsChangedUpdateSettings = () => {
+    ['red', 'yellow', 'green', 'blue'].forEach(color => {
+        let typeSwitch = document.getElementById(`color-${color}`);
+        typeSwitch.checked = colors.includes(color);
+    });
+}
+
+let toggleDetection = document.getElementById('toggle-detection');
+toggleDetection.addEventListener("click", () => {
+    toggleDetection.classList.toggle('active');
+    DETECTION_ACTIVATED = !DETECTION_ACTIVATED;
+});
+
 let labelCountInput = document.getElementById('label-count');
 labelCountInput.value = LABEL_COUNT;
 labelCountInput.addEventListener("change", () => {
@@ -89,4 +113,10 @@ frameRateInput.value = FRAME_RATE;
 frameRateInput.addEventListener("change", () => {
     FRAME_RATE = frameRateInput.value;
     setup();
+}, false);
+
+let reload = document.getElementById('reload');
+reload.addEventListener("click", () => {
+    onColorsChanged();
+    toggleSettings();
 }, false);

@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
-
 :root {
 	--dark-grey: #121212;
 	--background: var(--dark-grey);
 	--primary-color: #2CDD6D;
+	--spon: #FF1511;
+	--serres: #E8D700;
+	--medic: #2CDD6D;
+	--exotic: #04A3FF;
 }
 
 body, html {
@@ -12,15 +15,9 @@ body, html {
 	margin: 0;
 	width: 100%;
 	height: 100%;
-	overflow-y: hidden;
 	background: var(--background);
 	color: var(--dark-grey);
-}
-
-#video, #canvas {
-	bottom: 0;
-	position: absolute;
-	z-index: 100;
+	overflow: hidden;
 }
 
 .label {
@@ -89,13 +86,16 @@ body, html {
 
 #settings {
 	z-index: 1000;
-	margin: 16px;
 	position: absolute;
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	height: 100%;
 }
 
 #settings-header {
-	margin-top: 16px;
-	margin-left: 16px;
+	margin-top: 32px;
+	margin-left: 32px;
 	display: flex;
 	align-items: center;
 }
@@ -106,16 +106,26 @@ body, html {
 	margin-right: 16px;
 	cursor: pointer;
 	content: url("images/settings.svg");
-    -webkit-animation: rotating 10s linear infinite;
+	-webkit-animation: rotating 10s linear infinite;
+	animation: rotating 10s linear infinite;
 }
 
 @-webkit-keyframes rotating {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 #settings-title {
@@ -123,33 +133,106 @@ body, html {
 	color: white;
 }
 
-#settings-title,
-#controllers {
+#settings-title, #controllers {
 	visibility: hidden;
 }
 
-#settings.is-active #settings-title,
-#settings.is-active #controllers {
+#settings.is-active #settings-title, #settings.is-active #controllers {
 	visibility: visible;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
 #controllers {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	font-size: 0.75em;
 	margin-top: 16px;
+	margin-left: 16px;
+	margin-bottom: 16px;
 	-webkit-box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .5), 0 1px 3px 1px rgba(60, 64, 67, .15);
 	box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .5), 0 1px 3px 1px rgba(60, 64, 67, .15);
 	background: white;
 	padding: 16px;
 	border-radius: 5px;
+	flex-grow: 2;
+	overflow-y: auto;
+}
+
+#video {
+	position: absolute;
+}
+
+#video,
+#camera {
+	border-radius: 3px;
+}
+
+#camera {
+	display: none;
+	position: relative;
+	margin-bottom: 16px;
+}
+
+#camera.active {
+	display: flex;
+}
+
+#camera,
+#toggle-detection {
+	z-index: 10;
+}
+
+#toggle-detection {
+	position: absolute;
+	visibility: hidden;
+	background: white;
+	padding: 4px 8px;
+	margin: 16px;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+#camera:hover #toggle-detection {
+	visibility: visible;
+}
+
+#toggle-detection span {
+	color: var(--dark-grey);
+	font-weight: 700px;
+}
+
+#toggle-detection.active #activate-detection {
+	display: none;
+}
+
+#toggle-detection #desactivate-detection {
+	display: none;
+}
+
+#toggle-detection.active #desactivate-detection {
+	display: flex;
 }
 
 #controllers input {
 	font-family: 'Montserrat', sans-serif;
-	max-width: 50px;
-	margin-top: 8px;
-	margin-bottom: 8px;
+	max-width: 48px;
 	margin-right: 12px;
 	background: #f1f1f1;
 	border: none;
@@ -158,18 +241,19 @@ body, html {
 	text-align: center;
 }
 
-#controllers :first-child input {
+#controllers .controller,
+#video {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+#controllers :first-child {
 	margin-top: 0;
 }
 
-#controllers :last-child input {
-	margin-bottom: 0;
-}
-
-input[type='number']::-webkit-inner-spin-button, 
-input[type='number']::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    margin: 0;
+input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 input:focus {
@@ -179,4 +263,98 @@ input:focus {
 
 #controllers span {
 	font-weight: 500;
+}
+
+#reload {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+}
+
+#reload:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+#reload span {
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: 12px;
+}
+
+#reload-icon {
+	width: 16px;
+	height: 16px;
+	margin-right: 16px;
+	cursor: pointer;
+	content: url("images/reload.svg");
+	margin-right: auto;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 48px;
+	height: 24px;
+	margin-right: 15px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f1f1f1;
+	border-radius: 3px;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 24px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	border-radius: 3px;
+}
+
+input:checked+.slider:before {
+	-webkit-transform: translateX(16px);
+	-ms-transform: translateX(16px);
+	transform: translateX(16px);
+}
+
+#controllers > .color {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+#controllers > .color ~ .color {
+	margin-top: 8px;
+}
+
+#color-red:checked+.slider {
+	background-color: var(--spon);
+}
+
+#color-green:checked+.slider {
+	background-color: var(--medic);
+}
+
+#color-yellow:checked+.slider {
+	background-color: var(--serres);
+}
+
+#color-blue:checked+.slider {
+	background-color: var(--exotic);
 }

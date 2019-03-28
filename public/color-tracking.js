@@ -1,5 +1,8 @@
+DETECTION_ACTIVATED = true;
 MIN_CONSECUTIVE_COLORS = 5;
 consecutiveColors = 0;
+onColorsChanged = () => {};
+onColorsChangedUpdateSettings = () => {};
 
 registerColor = (name, hslCondition) => {
     window.tracking.ColorTracker.registerColor(name, function (r, g, b) {
@@ -23,16 +26,17 @@ window.onload = () => {
 
 onTrack = (event) => {
     var canvas = document.getElementById('canvas');
+    var camera = document.getElementById('camera');
+    camera.classList.add('active');
     var context = canvas.getContext('2d');
-    
     context.clearRect(0, 0, canvas.width, canvas.height);
+
+    if (!DETECTION_ACTIVATED)
+        return;
+
     event.data.forEach(function (rect) {
         context.strokeStyle = rect.color;
         context.strokeRect(rect.x, rect.y, rect.width, rect.height);
-        context.font = '11px Helvetica';
-        context.fillStyle = "#fff";
-        context.fillText('x: ' + rect.x + 'px', rect.x + rect.width + 5, rect.y + 11);
-        context.fillText('y: ' + rect.y + 'px', rect.x + rect.width + 5, rect.y + 22);
     });
 
     const trackedColors = new Set(event.data.map(rect => rect.color));
@@ -44,6 +48,8 @@ onTrack = (event) => {
         colors = Array.from(trackedColors);
     }
 
-    if (consecutiveColors == MIN_CONSECUTIVE_COLORS)
+    if (consecutiveColors == MIN_CONSECUTIVE_COLORS) {
         onColorsChanged();
+        onColorsChangedUpdateSettings();
+    }
 }
