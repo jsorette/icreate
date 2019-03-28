@@ -1,16 +1,3 @@
-LABEL_COUNT = 2;
-LABEL_DISPLAY_DURATION = 5;
-BRANCH_MIN_WEIGHT = 0.1;
-BRANCH_MAX_WEIGHT = 0.5;
-BRANCH_SPLIT_COUNT = 2;
-BRANCH_ORIGIN_LENGTH = 30;
-BRANCH_LENGTH_RATIO = 1.2;
-BRANCH_ORIGIN_ROTATION = -1.75;
-BRANCH_MAX_SHIFT = 2;
-BRANCH_MAX_FRAME_COUNT_APPEARANCE = 30;
-BRANCH_FRAME_COUNT_BY_GROWTH_STEP = 5;
-FRAME_RATE = 20;
-
 previousColors = [];
 colors = [];
 leaves = [];
@@ -26,7 +13,7 @@ labelIds = 0;
 setup = () => {
     createCanvas(windowWidth, windowHeight);
     smooth(10);
-    frameRate(FRAME_RATE);
+    frameRate(settings.FRAME_RATE);
 }
 
 draw = () => {
@@ -38,10 +25,17 @@ draw = () => {
     }
 }
 
+resetAll = () => {
+    previousColors = [];
+    activeLeaves = [];
+    generateRoots();
+    onColorsChanged();
+}
+
 onColorsChanged = () => {
     labelledLeaves.forEach(leaf => leaf.removeLabel());
-    if (colors.length == 0)
-      generateRoots();
+    if (colors.length < 1)
+        generateRoots();
     matchGardensToLeaves();
     setWeight();
     previousColors = Array.from(colors);
@@ -65,14 +59,14 @@ class Branch {
     }
 
     split() {
-        for (var i = 0; i < BRANCH_SPLIT_COUNT; i++) {
+        for (var i = 0; i < settings.BRANCH_SPLIT_COUNT; i++) {
             if (leaves.length >= gardens.length)
                 break;
             var child = new Branch(
                 this.end,
                 this,
                 this.rotation + random(-1, 1),
-                this.length * BRANCH_LENGTH_RATIO
+                this.length * settings.BRANCH_LENGTH_RATIO
             )
             this.childs.push(child);
             leaves.push(child);
@@ -106,12 +100,12 @@ class Branch {
             this.drawCurve(color);
             endShape();
         });
-        if (this.labelled && frameCount > BRANCH_MAX_FRAME_COUNT_APPEARANCE)
+        if (this.labelled && frameCount > settings.BRANCH_MAX_FRAME_COUNT_APPEARANCE)
             this.drawLabel();
     }
 
     drawCurve(color) {
-        if (color.count >= BRANCH_FRAME_COUNT_BY_GROWTH_STEP) {
+        if (color.count >= settings.BRANCH_FRAME_COUNT_BY_GROWTH_STEP) {
             color.lastCheckPoint+=1;
             color.count = 1;
         }
@@ -126,7 +120,7 @@ class Branch {
             curveVertex(path[path.length - 1].x(), path[path.length - 1].y());
         }
         else {
-            let x, y, t = color.count / BRANCH_FRAME_COUNT_BY_GROWTH_STEP / 3;
+            let x, y, t = color.count / settings.BRANCH_FRAME_COUNT_BY_GROWTH_STEP / 3;
             if (i === path.length - 1) {
                 const n = path.length;
                 x = curvePoint(path[n-4].x(), path[n-3].x(), path[n-2].x(), path[n-1].x(), t + 0.66);
@@ -212,9 +206,9 @@ shiftNodes = () => {
 
 selectLabelledLeaves = (force=false) => {
     const now = new Date();
-    if (force || !lastLabelUpdate || (now - lastLabelUpdate) / 1000 > LABEL_DISPLAY_DURATION) {
+    if (force || !lastLabelUpdate || (now - lastLabelUpdate) / 1000 > settings.LABEL_DISPLAY_DURATION) {
         labelledLeaves.forEach(leaf => leaf.removeLabel());
-        for (let i = 0; i < LABEL_COUNT; i++) {
+        for (let i = 0; i < settings.LABEL_COUNT; i++) {
             const leaf = activeLeaves[Math.round(random(0, activeLeaves.length - 1))];
             leaf.labelled = true;
             labelledLeaves.push(leaf);
@@ -227,8 +221,8 @@ generateRoots = () => {
     origin = new Branch(
         { x: width / 2, y: height, isOrigin: true },
         undefined,
-        BRANCH_ORIGIN_ROTATION,
-        BRANCH_ORIGIN_LENGTH
+        settings.BRANCH_ORIGIN_ROTATION,
+        settings.BRANCH_ORIGIN_LENGTH
     )
     var parents = [origin];
     leaves = parents;
@@ -272,7 +266,7 @@ matchColorToLeaf = (leaf, colorName, type, r, g, b) => {
       color.path = leaf.path.map((point, index) => {
           const randomShift = () => {
               if ((index > 1 || index < leaf.path.length - 2))
-                  return randomBool() ? -BRANCH_MAX_SHIFT : BRANCH_MAX_SHIFT;
+                  return randomBool() ? -settings.BRANCH_MAX_SHIFT : settings.BRANCH_MAX_SHIFT;
               return 0;
           }
           const shiftX = randomShift();
@@ -283,7 +277,7 @@ matchColorToLeaf = (leaf, colorName, type, r, g, b) => {
           };
       });
       color.name = colorName;
-      color.startingFrame = random(frameCount, frameCount + BRANCH_MAX_FRAME_COUNT_APPEARANCE);
+      color.startingFrame = random(frameCount, frameCount + settings.BRANCH_MAX_FRAME_COUNT_APPEARANCE);
       color.lastCheckPoint = 2;
       color.count = 1;
       leaf.colors.push(color);
@@ -315,7 +309,7 @@ matchGardensToLeaves = () => {
 setWeight = () => {
     leaves.forEach(leaf => {
         leaf.colors.forEach(color => {
-            color.weight = (color.value / maxExported) * (BRANCH_MAX_WEIGHT - BRANCH_MIN_WEIGHT) + BRANCH_MIN_WEIGHT;
+            color.weight = (color.value / maxExported) * (settings.BRANCH_MAX_WEIGHT - settings.BRANCH_MIN_WEIGHT) + settings.BRANCH_MIN_WEIGHT;
         });
     });
 }

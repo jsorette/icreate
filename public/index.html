@@ -11,8 +11,9 @@
 	<script type="text/javascript" src="lib/rgb-to-hsl.js"></script>
 	<script type="text/javascript" src="lib/shuffle-array.min.js"></script>
 	<script type="text/javascript" src="data.js"></script>
-	<script type="text/javascript" src="color-tracking.js"></script>
+	<script type="text/javascript" src="settings.js"></script>
 	<script type="text/javascript" src="sketch.js"></script>
+	<script type="text/javascript" src="color-tracking.js"></script>
 </head>
 <body>
 	<div id="settings">
@@ -94,11 +95,11 @@
 				<span>Décalage de pixel maximal</span>
 			</div>
 			<div class="controller">
-				<input type="number" id="branch-max-frame-count-appearance" min="0" step="0">
+				<input type="number" id="branch-max-frame-count-appearance" min="0" step="1">
 				<span>Image d'apparition maximale</span>
 			</div>
 			<div class="controller">
-				<input type="number" id="frame-rate" min="0" step="0.1">
+				<input type="number" id="frame-rate" min="0" step="1">
 				<span>Images par secondes</span>
 			</div>
 			<div id="reload">
@@ -107,6 +108,5 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="settings.js"></script>
 </body>
 </html>

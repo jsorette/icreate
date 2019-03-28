@@ -1,8 +1,5 @@
-DETECTION_ACTIVATED = true;
 MIN_CONSECUTIVE_COLORS = 5;
 consecutiveColors = 0;
-onColorsChanged = () => {};
-onColorsChangedUpdateSettings = () => {};
 
 registerColor = (name, hslCondition) => {
     window.tracking.ColorTracker.registerColor(name, function (r, g, b) {
@@ -31,7 +28,7 @@ onTrack = (event) => {
     var context = canvas.getContext('2d');
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    if (!DETECTION_ACTIVATED)
+    if (!settings.DETECTION_ACTIVATED)
         return;
 
     event.data.forEach(function (rect) {
