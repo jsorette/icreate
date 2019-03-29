@@ -271,8 +271,7 @@ input:focus {
 	align-items: center;
 }
 
-#reload:hover,
-#save:hover {
+#reload:hover {
 	cursor: pointer;
 	opacity: 0.8;
 }
@@ -358,19 +357,4 @@ input:checked+.slider:before {
 
 #color-blue:checked+.slider {
 	background-color: var(--exotic);
-}
-
-#save {
-	background: #2CDD6D;
-	border-radius: 3px;
-	padding: 4px 0;
-	display: flex;
-	margin-top: 16px;
-}
-
-#save span {
-	font-weight: 600;
-	margin-left: auto;
-	margin-right: auto;
-	color: white;
 }

@@ -1,5 +1,5 @@
 let settings = {
-    DETECTION_ACTIVATED: true,
+    DETECTION_ACTIVATED: false,
     LABEL_COUNT: 2,
     LABEL_DISPLAY_DURATION: 5,
     BRANCH_MIN_WEIGHT: 0.1,
@@ -38,6 +38,8 @@ window.addEventListener('load', _ => {
 
     ['red', 'yellow', 'green', 'blue'].forEach(color => {
         let typeSwitch = document.getElementById(`color-${color}`);
+        if (colors.includes(color))
+            typeSwitch.checked = true;
         typeSwitch.addEventListener('change', () => {
             if (colors.includes(color))
                 colors = colors.filter(c => c !== color);
@@ -48,7 +50,7 @@ window.addEventListener('load', _ => {
     });
 
     onColorsChangedUpdateSettings = () => {
-      onColorsChangedPlaySound();
+        //onColorsChangedPlaySound();
         ['red', 'yellow', 'green', 'blue'].forEach(color => {
             let typeSwitch = document.getElementById(`color-${color}`);
             typeSwitch.checked = colors.includes(color);
@@ -56,10 +58,9 @@ window.addEventListener('load', _ => {
     }
 
     onColorsChangedPlaySound = () => {
-      var audio = new Audio('./sounds/growingRoots.mp3');
-      audio.play();
+        var audio = new Audio('./sounds/growingRoots.mp3');
+        audio.play();
     }
-
 
     let toggleDetection = document.getElementById('toggle-detection');
     toggleDetection.addEventListener("click", () => {
@@ -149,13 +150,6 @@ window.addEventListener('load', _ => {
     branchMaxFrameCountAppearanceInput.addEventListener("change", () => {
         settings.BRANCH_MAX_FRAME_COUNT_APPEARANCE = parseFloat(branchMaxFrameCountAppearanceInput.value);
         resetAll();
-    }, false);
-
-    let frameRateInput = document.getElementById('frame-rate');
-    frameRateInput.value = settings.FRAME_RATE;
-    frameRateInput.addEventListener("change", () => {
-        settings.FRAME_RATE = parseFloat(frameRateInput.value);
-        setup();
     }, false);
 
     let reload = document.getElementById('reload');

@@ -13,6 +13,8 @@ labelIds = 0;
 setup = () => {
     createCanvas(windowWidth, windowHeight);
     smooth(10);
+    colors = [['red', 'blue', 'yellow', 'green'][Math.floor(random(0, 4))]];
+    resetAll();
     frameRate(settings.FRAME_RATE);
 }
 

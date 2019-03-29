@@ -11,8 +11,8 @@
 	<script type="text/javascript" src="lib/rgb-to-hsl.js"></script>
 	<script type="text/javascript" src="lib/shuffle-array.min.js"></script>
 	<script type="text/javascript" src="data.js"></script>
-	<script type="text/javascript" src="settings.js"></script>
 	<script type="text/javascript" src="sketch.js"></script>
+	<script type="text/javascript" src="settings.js"></script>
 	<script type="text/javascript" src="color-tracking.js"></script>
 </head>
 <body>
@@ -25,7 +25,7 @@
 			<video id="video" width="280" height="210" autoPlay loop muted></video>
 			<div id="camera">
 				<canvas id="canvas" width="280" height="210"></canvas>
-				<div id="toggle-detection" class="active">
+				<div id="toggle-detection">
 					<span id="activate-detection">Activer la détection</span>
 					<span id="desactivate-detection">Désactiver la détection</span>
 				</div>
@@ -106,16 +106,9 @@
 				<input type="number" id="branch-max-frame-count-appearance" min="0" step="1">
 				<span>Image d'apparition maximale</span>
 			</div>
-			<div class="controller">
-				<input type="number" id="frame-rate" min="0" step="1">
-				<span>Images par secondes</span>
-			</div>
 			<div id="reload">
 				<span>Regénérer les racines</span>
 				<img id="reload-icon">
-			</div>
-			<div id="save">
-				<span>Sauvegarder les paramètres</span>
 			</div>
 		</div>
 	</div>
