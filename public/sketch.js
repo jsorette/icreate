@@ -190,17 +190,17 @@ shiftNodes = () => {
         if (!node.count || !node.shiftX || !node.shiftY) {
             node.count = random(0, 10);
             if (random(0, 1) > 0.5) {
-                node.shiftX = randomBool(1, 10) ? () => 0 : cos;
-                node.shiftY = randomBool(1, 10) ? () => 0 : sin;
+                node.shiftX = cos;
+                node.shiftY = sin;
             } else {
-                node.shiftX = randomBool(1, 10) ? () => 0 : sin;
-                node.shiftY = randomBool(1, 10) ? () => 0 : cos;
+                node.shiftX = sin;
+                node.shiftY = cos;
             }
-            node.speed = node.isLeaf ? random(0, 1) : 1;
+            node.motion = node.isLeaf ? random(0, settings.BRANCH_MAX_MOTION_RATIO) : settings.BRANCH_MAX_MOTION_RATIO;
         }
         node.count += 0.1;
-        node.x += node.shiftX(node.count) * node.speed;
-        node.y += node.shiftY(node.count) * node.speed;
+        node.x += node.shiftX(node.count) * node.motion;
+        node.y += node.shiftY(node.count) * node.motion;
     })
 }
 

@@ -8,10 +8,11 @@ let settings = {
     BRANCH_ORIGIN_LENGTH: 30,
     BRANCH_LENGTH_RATIO: 1.2,
     BRANCH_ORIGIN_ROTATION: -1.75,
+    BRANCH_DISPERSION: 1,
+    BRANCH_MAX_MOTION_RATIO: 1,
     BRANCH_MAX_SHIFT: 2,
     BRANCH_MAX_FRAME_COUNT_APPEARANCE: 30,
     BRANCH_FRAME_COUNT_BY_GROWTH_STEP: 5,
-    BRANCH_DISPERSION: 1,
     FRAME_RATE: 20,
 };
 
@@ -122,6 +123,12 @@ window.addEventListener('load', _ => {
         resetAll();
     }, false);
 
+    let branchMaxMotionRatioInput = document.getElementById('branch-max-motion-ratio');
+    branchMaxMotionRatioInput.value = settings.BRANCH_MAX_MOTION_RATIO;
+    branchMaxMotionRatioInput.addEventListener("change", () => {
+        settings.BRANCH_MAX_MOTION_RATIO = parseFloat(branchMaxMotionRatioInput.value);
+        resetAll();
+    }, false);
 
     let branchMaxShiftInput = document.getElementById('branch-max-shift');
     branchMaxShiftInput.value = settings.BRANCH_MAX_SHIFT;
