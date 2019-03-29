@@ -66,6 +66,9 @@ window.addEventListener('load', _ => {
     toggleDetection.addEventListener("click", () => {
         toggleDetection.classList.toggle('active');
         settings.DETECTION_ACTIVATED = !settings.DETECTION_ACTIVATED;
+        colors = [];
+        onColorsChanged();
+        onColorsChangedUpdateSettings();
     });
 
     let labelCountInput = document.getElementById('label-count');
