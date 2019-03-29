@@ -11,6 +11,7 @@ let settings = {
     BRANCH_MAX_SHIFT: 2,
     BRANCH_MAX_FRAME_COUNT_APPEARANCE: 30,
     BRANCH_FRAME_COUNT_BY_GROWTH_STEP: 5,
+    BRANCH_DISPERSION: 1,
     FRAME_RATE: 20,
 };
 
@@ -113,6 +114,14 @@ window.addEventListener('load', _ => {
         settings.BRANCH_ORIGIN_ROTATION = parseFloat(branchOriginRotationInput.value);
         resetAll();
     }, false);
+
+    let branchDispersionInput = document.getElementById('branch-dispersion');
+    branchDispersionInput.value = settings.BRANCH_DISPERSION;
+    branchDispersionInput.addEventListener("change", () => {
+        settings.BRANCH_DISPERSION = parseFloat(branchDispersionInput.value);
+        resetAll();
+    }, false);
+
 
     let branchMaxShiftInput = document.getElementById('branch-max-shift');
     branchMaxShiftInput.value = settings.BRANCH_MAX_SHIFT;

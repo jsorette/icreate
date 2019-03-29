@@ -65,7 +65,7 @@ class Branch {
             var child = new Branch(
                 this.end,
                 this,
-                this.rotation + random(-1, 1),
+                this.rotation + random(-settings.BRANCH_DISPERSION, settings.BRANCH_DISPERSION),
                 this.length * settings.BRANCH_LENGTH_RATIO
             )
             this.childs.push(child);
