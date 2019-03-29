@@ -48,11 +48,18 @@ window.addEventListener('load', _ => {
     });
 
     onColorsChangedUpdateSettings = () => {
+      onColorsChangedPlaySound();
         ['red', 'yellow', 'green', 'blue'].forEach(color => {
             let typeSwitch = document.getElementById(`color-${color}`);
             typeSwitch.checked = colors.includes(color);
         });
     }
+
+    onColorsChangedPlaySound = () => {
+      var audio = new Audio('./sounds/growingRoots.mp3');
+      audio.play();
+    }
+
 
     let toggleDetection = document.getElementById('toggle-detection');
     toggleDetection.addEventListener("click", () => {
