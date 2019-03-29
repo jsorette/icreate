@@ -140,4 +140,9 @@ window.addEventListener('load', _ => {
         resetAll();
         toggleSettings();
     }, false);
+
+    document.addEventListener('keydown', function(event) {
+        if(event.keyCode == 32)
+            resetAll();
+    });
 });
