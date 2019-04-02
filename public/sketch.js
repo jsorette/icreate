@@ -299,8 +299,8 @@ matchGardensToLeaves = () => {
         const leaf = leaves[i];
         leaf.garden = garden;
         matchColorToLeaf(leaf, 'blue', 'EXOTIC', 4, 163, 255);
-        matchColorToLeaf(leaf, 'red', 'SPON', 255, 21, 17);
-        matchColorToLeaf(leaf, 'yellow', 'SERRES', 232, 145, 21);
+        matchColorToLeaf(leaf, 'red', 'SPON', 255, 43, 62);
+        matchColorToLeaf(leaf, 'yellow', 'SERRES', 255, 244, 47);
         matchColorToLeaf(leaf, 'green', 'MEDIC', 44, 221, 109);
         shuffle(leaf.colors);
         if (leaf.colors.length > 0)
